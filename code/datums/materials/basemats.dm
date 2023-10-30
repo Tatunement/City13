@@ -547,3 +547,15 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	victim.apply_damage(30, BURN, BODY_ZONE_HEAD, wound_bonus = 5)
 	source_item?.reagents?.add_reagent(/datum/reagent/toxin/plasma, source_item.reagents.total_volume*5)
 	return TRUE
+
+//hl13 mats
+
+/datum/material/hl13/scrap_metal
+	name = "Scrap metal"
+	desc = "Pile of useless metal junk."
+	color = "#8a7e7e"
+	greyscale_colors = "#8b8585"
+	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
+	sheet_type = /obj/item/stack/sheet/hl13/scrap_metal
+	armor_modifiers = list(MELEE = 0.5, BULLET = 0.5, LASER = 1.25, ENERGY = 0.5, BOMB = 0.5, BIO = 0.25, FIRE = 1.5, ACID = 1.5)
+	value_per_unit = 0.0025

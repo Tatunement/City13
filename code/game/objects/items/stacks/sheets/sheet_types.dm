@@ -9,6 +9,8 @@
  * Paper Frames
  * Runed Metal (cult)
  * Bronze (bake brass)
+ * ----------HL13----------
+ * Scrap Metal
  */
 
 /*
@@ -860,4 +862,33 @@ new /datum/stack_recipe("paper frame door", /obj/structure/mineral_door/paperfra
 /obj/item/stack/sheet/hauntium/twenty
 	amount = 20
 /obj/item/stack/sheet/hauntium/five
+	amount = 5
+
+//hl13
+/obj/item/stack/sheet/hl13/scrap_metal
+	name = "scrap metal"
+	desc = "Pile of useless metal junk."
+	icon = 'hl13/icons/obj/stack_objects.dmi'
+	icon_state = "sheet-scrap_metal"
+	inhand_icon_state = "sheet-metal"
+	mats_per_unit = list(/datum/material/hl13/scrap_metal=MINERAL_MATERIAL_AMOUNT)
+	throwforce = 10
+	flags_1 = CONDUCT_1
+	resistance_flags = FIRE_PROOF
+	merge_type = /obj/item/stack/sheet/hl13/scrap_metal
+	point_value = 2
+	tableVariant = /obj/structure/table
+	material_type = /datum/material/hl13/scrap_metal
+	matter_amount = 4
+
+/obj/item/stack/sheet/hl13/scrap_metal/fifty
+	amount = 50
+
+/obj/item/stack/sheet/hl13/scrap_metal/twenty
+	amount = 20
+
+/obj/item/stack/sheet/hl13/scrap_metal/ten
+	amount = 10
+
+/obj/item/stack/sheet/hl13/scrap_metal/five
 	amount = 5
