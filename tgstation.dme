@@ -5232,6 +5232,7 @@
 #include "hl13\code\game\turfs\open\floor\train_floors.dm"
 #include "hl13\code\game\turfs\open\floor\wooden.dm"
 #include "hl13\code\game\turfs\open\floor\yellow_floor.dm"
+#include "hl13\code\game\machinery\fabricator.dm"
 #include "hl13\code\modules\cargo\coupon.dm"
 #include "hl13\code\modules\clothing\glasses\hud.dm"
 #include "hl13\code\modules\clothing\gloves\gloves.dm"
