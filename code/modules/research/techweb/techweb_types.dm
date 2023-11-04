@@ -75,3 +75,6 @@ GLOBAL_LIST_EMPTY(autounlock_techwebs)
 
 /datum/techweb/autounlocking/smelter
 	allowed_buildtypes = SMELTER
+
+/datum/techweb/autounlocking/fabricator
+	allowed_buildtypes = FABRICATORHL13
