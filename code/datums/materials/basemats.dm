@@ -559,3 +559,13 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	sheet_type = /obj/item/stack/sheet/hl13/scrap_metal
 	armor_modifiers = list(MELEE = 0.5, BULLET = 0.5, LASER = 1.25, ENERGY = 0.5, BOMB = 0.5, BIO = 0.25, FIRE = 1.5, ACID = 1.5)
 	value_per_unit = 0.0025
+
+/datum/material/hl13/steel_sheet
+	name = "Scrap metal"
+	desc = "Pile of useless metal junk."
+	color = "#cbd8ca"
+	greyscale_colors = "#707770"
+	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE, MAT_CATEGORY_BASE_RECIPES = TRUE, MAT_CATEGORY_ITEM_MATERIAL=TRUE)
+	sheet_type = /obj/item/stack/sheet/hl13/steel_sheet
+	armor_modifiers = list(MELEE = 1, BULLET = 1, LASER = 2.5, ENERGY = 1, BOMB = 1, BIO = 0.5, FIRE = 3, ACID = 3)
+	value_per_unit = 0.0025

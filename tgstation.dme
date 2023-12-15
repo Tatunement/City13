@@ -5,7 +5,7 @@
 // END_INTERNALS
 
 // BEGIN_FILE_DIR
-#define FILE_DIR .
+#define FILE_DIR
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
@@ -5204,6 +5204,7 @@
 #include "hl13\code\datums\id_trim\jobs.dm"
 #include "hl13\code\game\area\areas.dm"
 #include "hl13\code\game\machinery\fabricator.dm"
+#include "hl13\code\game\machinery\refiner.dm"
 #include "hl13\code\game\objects\effects\contraband.dm"
 #include "hl13\code\game\objects\items\stacks\tiles\tile_types.dm"
 #include "hl13\code\game\objects\items\storage\belt.dm"

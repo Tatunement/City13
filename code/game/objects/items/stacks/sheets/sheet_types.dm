@@ -11,6 +11,7 @@
  * Bronze (bake brass)
  * ----------HL13----------
  * Scrap Metal
+ * steel sheet
  */
 
 /*
@@ -891,4 +892,32 @@ new /datum/stack_recipe("paper frame door", /obj/structure/mineral_door/paperfra
 	amount = 10
 
 /obj/item/stack/sheet/hl13/scrap_metal/five
+	amount = 5
+
+/obj/item/stack/sheet/hl13/steel_sheet
+	name = "Steel sheet"
+	desc = "Strong metal sheet."
+	icon = 'hl13/icons/obj/stack_objects.dmi'
+	icon_state = "sheet-metal"
+	inhand_icon_state = "sheet-metal"
+	mats_per_unit = list(/datum/material/hl13/steel_sheet=MINERAL_MATERIAL_AMOUNT)
+	throwforce = 10
+	flags_1 = CONDUCT_1
+	resistance_flags = FIRE_PROOF
+	merge_type = /obj/item/stack/sheet/hl13/steel_sheet
+	point_value = 4
+	tableVariant = /obj/structure/table
+	material_type = /datum/material/hl13/steel_sheet
+	matter_amount = 4
+
+/obj/item/stack/sheet/hl13/steel_sheet/fifty
+	amount = 50
+
+/obj/item/stack/sheet/hl13/steel_sheet/twenty
+	amount = 20
+
+/obj/item/stack/sheet/hl13/steel_sheet/ten
+	amount = 10
+
+/obj/item/stack/sheet/hl13/steel_sheet/five
 	amount = 5
