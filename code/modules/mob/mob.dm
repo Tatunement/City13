@@ -98,6 +98,9 @@
 	initialize_actionspeed()
 	update_movespeed(TRUE)
 	become_hearing_sensitive()
+	//HL13 CODE
+	init_scores()
+	//HL13 CODE
 	log_mob_tag("CREATED: [key_name(src)] \[[type]\]")
 
 /**

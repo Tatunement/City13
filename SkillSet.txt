@@ -1,0 +1,89 @@
+SkillSet
+
+A system where Skills arent used to define the outcome of a situation but to modify the way we do thing
+
+Ex.
+  Crafting
+    To craft stuff we must learn RECIPES
+      To learn recipe we must have FEATS and we must complete a minigame on the first try of the
+      craft
+
+
+we try to craft a hammer 3x3 memory
+  we go and click on the learn recipe with the ingredients on the ground
+    Minigame starts.
+      Minigame will have a difficulty setting.
+
+      In we have intelligence high enough it will change the difficulty making the minigame easier
+
+    40 in Handwork
+
+    1-40 and you can receive a %
+
+    4 steel to craft a wall
+
+
+
+
+Shooting
+    WS 40
+
+    roll 50-60
+
+    gun will shoot 1-2 degrees wider
+
+
+Ability Scores
+
+WeaponSkill: Melee Weapons
+
+Ballistic Skills: Ranged Weaponry
+
+Strenght: Carrying Capacity and Damage Modifier
+
+Toughness: Hitpoints and Resistances
+
+Agility: Dodge and movement
+
+Intelligence: Crafting and Learning
+
+Perception: For roll check on loot in containers
+
+willpower: For mood and vices
+
+fellowship: Able to judge emotion of another (Player looks like they've just seen a ghost; Player's hands are shaking) or maybe for teaching skills
+
+
+How to level up:
+
+  Window where you can buy Talents or Skill Increments
+
+  Ex:
+    I had rolled a 30 on my weapons skill and i want advance it
+      Every 30 minutes you gain x number of xp that you can spend on feats and skills/Characteristics advancements
+
+      Simple - intermediate - trained - expert
+      100         250           750       1000
+        +5        +5            +5          +5
+
+      you cant go for 100%
+
+      35          40          45            50
+
+
+
+Skill rolls and shit
+
+	At the beginning of the round skills will be assigned based on your current profession and background
+
+	Some background can give you Feats that enables you to use skills
+
+	everyone gather access to these skills at the beginning of the round:
+		Awareness
+		Concealment
+		Disguise
+		Dodge
+		Logic
+		Search
+		Silent Move
+

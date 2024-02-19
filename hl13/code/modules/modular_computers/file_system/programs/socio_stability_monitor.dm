@@ -12,7 +12,7 @@
 
 /datum/computer_file/program/socio_stability_monitor/proc/socio_stability_modify()
 	stability_value =- instability_value
-		return stability_value
+	return stability_value
 
 /datum/computer_file/program/socio_stability_monitor/ui_data(mob/user)
 	var/list/data = list()
