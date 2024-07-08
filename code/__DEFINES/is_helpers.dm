@@ -121,6 +121,8 @@ GLOBAL_LIST_INIT(turfs_openspace, typecacheof(list(
 
 #define ispAI(A) (istype(A, /mob/living/silicon/pai))
 
+#define isdispatch(A) (istype(A, /mob/living/silicon/hl13/dispatch))
+
 // basic mobs
 #define isbasicmob(A) (istype(A, /mob/living/basic))
 

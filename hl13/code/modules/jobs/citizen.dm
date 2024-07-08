@@ -10,7 +10,7 @@
 	outfit = /datum/outfit/job/citizen
 	plasmaman_outfit = /datum/outfit/plasmaman
 	paycheck = PAYCHECK_LOWER
-
+	spawn_type = /mob/living/silicon/hl13/dispatch
 	paycheck_department = ACCOUNT_CIV
 	display_order = JOB_DISPLAY_ORDER_CITIZEN
 
