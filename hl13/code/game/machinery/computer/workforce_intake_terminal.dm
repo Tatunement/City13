@@ -34,6 +34,10 @@
 		coupon_age = coupon.recorded_age
 		stored_coupon = attacking_item
 		coupon_inserted = TRUE
+
+/obj/machinery/computer/hl13/combine_terminal/workforce_terminal/attack_dispatch(mob/user)
+	ui_interact(user)
+
 /obj/machinery/computer/hl13/combine_terminal/workforce_terminal/ui_interact(mob/user, datum/tgui/ui)
 	. = ..()
 	ui = SStgui.try_update_ui(user, src, ui)
