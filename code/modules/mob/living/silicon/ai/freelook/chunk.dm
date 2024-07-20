@@ -152,6 +152,10 @@
 			if(mech.chassis_camera?.can_use())
 				local_cameras += mech.chassis_camera
 
+		for(var/obj/item/clothing/mask/gas/hl13/combine/mask in urange(CHUNK_SIZE, locate(x + (CHUNK_SIZE / 2), y + (CHUNK_SIZE / 2), z_level)))
+			if(mask.camera?.can_use())
+				local_cameras += mask.camera
+
 		cameras["[z_level]"] = local_cameras
 
 		var/image/mirror_from = GLOB.cameranet.obscured_images[GET_Z_PLANE_OFFSET(z_level) + 1]

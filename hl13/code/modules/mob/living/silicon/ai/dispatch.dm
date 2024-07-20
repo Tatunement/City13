@@ -28,6 +28,9 @@
 	ADD_TRAIT(src, TRAIT_IMMOBILIZED, REF(src))
 	toggle_camera = new
 	toggle_camera.Grant(src)
+	builtInCamera = new (src)
+	builtInCamera.network = list("city13")
+
 /mob/living/silicon/hl13/dispatch/proc/give_eye_control()
 	eyeobj.eye_user = src
 	eyeobj.name = "Camera Eye ([src.name])"

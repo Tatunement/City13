@@ -28,6 +28,7 @@
 	. = ..()
 	if(shoes && body_position == STANDING_UP && loc == NewLoc && has_gravity(loc))
 		SEND_SIGNAL(shoes, COMSIG_SHOES_STEP_ACTION)
+		SEND_SIGNAL(src, COMSIG_CAMERA_MOVE)
 
 /mob/living/carbon/human/Process_Spacemove(movement_dir = 0, continuous_move = FALSE)
 	if(movement_type & FLYING || HAS_TRAIT(src, TRAIT_FREE_FLOAT_MOVEMENT))

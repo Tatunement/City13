@@ -421,3 +421,6 @@
 
 /// from /obj/machinery/mineral/ore_redemption/pickup_item when it successfully picks something up
 #define COMSIG_ORM_COLLECTED_ORE "orm_collected_ore"
+
+///used for camera updates in items with cameras
+#define COMSIG_CAMERA_MOVE "camera_move"

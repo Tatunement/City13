@@ -1,4 +1,5 @@
 #define COMSIG_HANDLE_NIGHT_VISION "handle_night_vision"
+#define MASK_CAMERA_BUFFER 0.5 SECONDS
 
 /obj/item/clothing/mask/gas/hl13/combine
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEFACIALHAIR|HIDESNOUT|HIDEHAIR
@@ -6,13 +7,18 @@
 	has_fov = FALSE
 	///Setting the hud_type we want the mask to generate
 	var/hud_type = /obj/item/clothing/glasses/hud/hl13/combine/cp/night
+	var/obj/machinery/camera/hl13/combine/camera = null
+	var/camera_c_tag = "404"
 
 /obj/item/clothing/mask/gas/hl13/combine/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_HANDLE_NIGHT_VISION, PROC_REF(handle_nv))
+	RegisterSignal(src, COMSIG_CAMERA_MOVE, PROC_REF(camera_update))
 
 /obj/item/clothing/mask/gas/hl13/combine/equipped(mob/living/carbon/human/M, slot)
 	. = ..()
+	camera = new(M)
+	camera.c_tag = "Combine Officer [camera_c_tag]"
 	if(slot != ITEM_SLOT_MASK) //TODO: AVOID PUTTING ON THE MASK IF THE EYE SLOT IS OCCUPIED
 		return
 	if(!isnull(M.glasses)) {
@@ -25,6 +31,7 @@
 /obj/item/clothing/mask/gas/hl13/combine/dropped(mob/M)
 	. = ..()
 	remove_hud(M)
+	remove_camera()
 
 /obj/item/clothing/mask/gas/hl13/combine/proc/create_hud(mob/living/carbon/human/M, slot)
 	if(ishuman(M))
@@ -32,6 +39,13 @@
 		ADD_TRAIT(hud, TRAIT_NODROP, TRAIT_GENERIC)
 		M.equip_to_slot_if_possible(hud, ITEM_SLOT_EYES, 0, 0, 1)
 
+/obj/item/clothing/mask/gas/hl13/combine/proc/remove_camera()
+	if(camera)
+		QDEL_NULL(camera)
+
+/obj/item/clothing/mask/gas/hl13/combine/proc/camera_update()
+	SIGNAL_HANDLER
+	GLOB.cameranet.updatePortableCamera(camera, MASK_CAMERA_BUFFER)
 
 /obj/item/clothing/mask/gas/hl13/combine/proc/remove_hud(mob/living/carbon/human/M)
 	handle_nv(M.wear_mask, FALSE, M)
@@ -90,3 +104,5 @@
 		actiontype.button_icon_state = icon_state
 		actiontype.build_all_button_icons()
 		SEND_SIGNAL(user.wear_mask, COMSIG_HANDLE_NIGHT_VISION, night_vision, user)
+
+#undef MASK_CAMERA_BUFFER
