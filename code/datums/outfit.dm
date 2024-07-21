@@ -184,6 +184,7 @@
 		EQUIP_OUTFIT_ITEM(head, ITEM_SLOT_HEAD)
 	if(mask)
 		EQUIP_OUTFIT_ITEM(mask, ITEM_SLOT_MASK)
+		SEND_SIGNAL(src, COMSIG_OUTFIT_MASK_EQUIP,H,ITEM_SLOT_MASK)
 	if(neck)
 		EQUIP_OUTFIT_ITEM(neck, ITEM_SLOT_NECK)
 	if(ears)
@@ -249,7 +250,7 @@
 				var/obj/item/tank/internals/internals = H.is_holding_item_of_type(/obj/item/tank/internals)
 				if(internals)
 					H.open_internals(internals)
-			else 
+			else
 				H.open_internals(H.get_item_by_slot(internals_slot))
 		if(implants)
 			for(var/implant_type in implants)

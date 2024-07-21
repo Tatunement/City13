@@ -4,3 +4,5 @@
 // /obj/item/clothing
 /// Sent when mobs try to equip clothing on others through attacking
 #define COMSIG_CLOTHING_ATTACK_EQUIP "clothing_attack_equip"
+/// Sent when mask is equiped by outfit system
+#define COMSIG_OUTFIT_MASK_EQUIP "outfit_mask_equip"

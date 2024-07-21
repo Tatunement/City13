@@ -9,14 +9,17 @@
 	var/hud_type = /obj/item/clothing/glasses/hud/hl13/combine/cp/night
 	var/obj/machinery/camera/hl13/combine/camera = null
 	var/camera_c_tag = "404"
+	var/wearer = null
 
 /obj/item/clothing/mask/gas/hl13/combine/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_HANDLE_NIGHT_VISION, PROC_REF(handle_nv))
 	RegisterSignal(src, COMSIG_CAMERA_MOVE, PROC_REF(camera_update))
+	RegisterSignal(src,COMSIG_OUTFIT_MASK_EQUIP,PROC_REF(equipped))
 
 /obj/item/clothing/mask/gas/hl13/combine/equipped(mob/living/carbon/human/M, slot)
 	. = ..()
+	wearer = M
 	camera = new(M)
 	camera.c_tag = "Combine Officer [camera_c_tag]"
 	if(slot != ITEM_SLOT_MASK) //TODO: AVOID PUTTING ON THE MASK IF THE EYE SLOT IS OCCUPIED
@@ -30,6 +33,7 @@
 
 /obj/item/clothing/mask/gas/hl13/combine/dropped(mob/M)
 	. = ..()
+	wearer = null
 	remove_hud(M)
 	remove_camera()
 
