@@ -14,14 +14,11 @@
 /obj/item/clothing/mask/gas/hl13/combine/Initialize(mapload)
 	. = ..()
 	RegisterSignal(src, COMSIG_HANDLE_NIGHT_VISION, PROC_REF(handle_nv))
-	RegisterSignal(src, COMSIG_CAMERA_MOVE, PROC_REF(camera_update))
-	RegisterSignal(src,COMSIG_OUTFIT_MASK_EQUIP,PROC_REF(equipped))
+	RegisterSignal(src,COMSIG_OUTFIT_MASK_EQUIP,PROC_REF(create_camera))
 
 /obj/item/clothing/mask/gas/hl13/combine/equipped(mob/living/carbon/human/M, slot)
 	. = ..()
-	wearer = M
-	camera = new(M)
-	camera.c_tag = "Combine Officer [camera_c_tag]"
+	remove_camera()
 	if(slot != ITEM_SLOT_MASK) //TODO: AVOID PUTTING ON THE MASK IF THE EYE SLOT IS OCCUPIED
 		return
 	if(!isnull(M.glasses)) {
@@ -30,12 +27,14 @@
 		M.glasses = null
 	}
 	create_hud(M, slot)
+	create_camera(M)
 
 /obj/item/clothing/mask/gas/hl13/combine/dropped(mob/M)
 	. = ..()
 	wearer = null
 	remove_hud(M)
 	remove_camera()
+	create_camera()
 
 /obj/item/clothing/mask/gas/hl13/combine/proc/create_hud(mob/living/carbon/human/M, slot)
 	if(ishuman(M))
@@ -45,7 +44,25 @@
 
 /obj/item/clothing/mask/gas/hl13/combine/proc/remove_camera()
 	if(camera)
+		UnregisterSignal(src, COMSIG_CAMERA_MOVE)
 		QDEL_NULL(camera)
+	else
+		return
+
+/obj/item/clothing/mask/gas/hl13/combine/proc/create_camera(mob/living/carbon/human/M)
+	if(M)
+		RegisterSignal(src, COMSIG_CAMERA_MOVE, PROC_REF(camera_update))
+		wearer = M
+		camera = new(M)
+		camera.c_tag = "[M.job] [camera_c_tag]"
+	if(!M)
+		camera = new(src)
+		camera.c_tag = "[M.job] [camera_c_tag]"
+
+/obj/item/clothing/mask/gas/hl13/combine/Move()
+	. = ..()
+	if(!wearer)
+		camera_update()
 
 /obj/item/clothing/mask/gas/hl13/combine/proc/camera_update()
 	SIGNAL_HANDLER

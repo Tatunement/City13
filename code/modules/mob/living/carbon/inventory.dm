@@ -94,6 +94,7 @@
 			if(wear_mask)
 				return
 			wear_mask = I
+			SEND_SIGNAL(I,COMSIG_OUTFIT_MASK_EQUIP,src)
 			wear_mask_update(I, toggle_off = 0)
 		if(ITEM_SLOT_HEAD)
 			if(head)
