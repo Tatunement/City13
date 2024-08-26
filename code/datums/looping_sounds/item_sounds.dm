@@ -40,3 +40,13 @@
 	end_volume = 35
 	volume = 40
 	ignore_walls = FALSE
+
+/datum/looping_sound/sledgehammer
+	mid_sounds = list('hl13/sound/items/hammer_deconstruct.ogg' = 1)
+	mid_length = 5 SECONDS
+	volume = 25
+
+/datum/looping_sound/welderhammer
+	mid_sounds = list('hl13/sound/items/welder_hammer_deconstruct.ogg' = 1)
+	mid_length = 0.6 SECONDS
+	volume = 25

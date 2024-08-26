@@ -1,4 +1,4 @@
-"a" = (/obj/structure/window/train/west,/turf/closed/wall/train_wall_front,/area/shuttle/arrival)
+"a" = (/obj/structure/window/train/west,/turf/closed/wall/hl13/train_wall_front,/area/shuttle/arrival)
 "d" = (/obj/structure/window/train/east,/obj/structure/chair/sofa/hl13/trainseat/midwest,/turf/open/floor/city_floor/train_floor,/area/shuttle/arrival)
 "e" = (/obj/structure/window/train/west,/obj/structure/window/train/west,/obj/structure/chair/sofa/hl13/trainseat/righteast,/turf/open/floor/city_floor/train_floor,/area/shuttle/arrival)
 "f" = (/obj/machinery/light/floor{active_power_usage = 0; idle_power_usage = 0; use_power = 0},/turf/open/floor/city_floor/train_carpet,/area/shuttle/arrival)
@@ -10,8 +10,8 @@
 "B" = (/obj/structure/window/train/east,/turf/open/floor/city_floor/train_floor,/area/shuttle/arrival)
 "C" = (/obj/structure/window/train/west,/obj/structure/chair/sofa/hl13/trainseat/lefteast,/turf/open/floor/city_floor/train_floor,/area/shuttle/arrival)
 "I" = (/obj/machinery/door/window/hl13/train/west,/turf/open/floor/city_floor/train_floor,/area/shuttle/arrival)
-"J" = (/obj/docking_port/mobile/arrivals/hl13/train{dir = 1; name = "city13 arrivals train"},/turf/closed/wall/train_wall_front,/area/shuttle/arrival)
-"M" = (/turf/closed/wall/train_wall_front,/area/shuttle/arrival)
+"J" = (/obj/docking_port/mobile/arrivals/hl13/train{dir = 1; name = "city13 arrivals train"},/turf/closed/wall/hl13/train_wall_front,/area/shuttle/arrival)
+"M" = (/turf/closed/wall/hl13/train_wall_front,/area/shuttle/arrival)
 "P" = (/turf/open/floor/city_floor/train_carpet,/area/shuttle/arrival)
 "U" = (/obj/structure/window/train/west,/turf/open/floor/city_floor/train_floor,/area/shuttle/arrival)
 

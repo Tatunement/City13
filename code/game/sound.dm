@@ -414,4 +414,10 @@
 				soundin = pick('sound/effects/treechop1.ogg', 'sound/effects/treechop2.ogg', 'sound/effects/treechop3.ogg')
 			if(SFX_ROCK_TAP)
 				soundin = pick('sound/effects/rocktap1.ogg', 'sound/effects/rocktap2.ogg', 'sound/effects/rocktap3.ogg')
+			if(HL13_SFX_STUNBATON_SPARK)
+				soundin = pick(
+					'hl13/sound/weapons/melee/stun_baton/stunstick_spark1.ogg',
+					'hl13/sound/weapons/melee/stun_baton/stunstick_spark2.ogg',
+					'hl13/sound/weapons/melee/stun_baton/stunstick_spark3.ogg',
+				)
 	return soundin

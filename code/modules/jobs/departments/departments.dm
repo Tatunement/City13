@@ -166,3 +166,12 @@
 	display_order = 13
 	label_class = "civilworkersunion"
 	ui_color = "#BCA136"
+
+/datum/job_department/engineer_core
+	department_name = DEPARTMENT_ENGINEER_CORE
+	department_bitflags = DEPARTMENT_BITFLAG_ENGINEER_CORE
+	department_head = /datum/job/city_administrator //place holder
+	department_experience_type = EXP_TYPE_ENGINEERING
+	display_order = 14
+	label_class = "engineercore"
+	ui_color = "#51704b"

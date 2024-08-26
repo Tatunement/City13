@@ -477,6 +477,16 @@
 /obj/item/stock_parts/cell/inducer_supply
 	maxcharge = 5000
 
+/obj/item/stock_parts/cell/hl13
+	name = "combine battery"
+	desc = ""
+	icon = 'hl13/icons/obj/combine.dmi'
+	icon_state = "battery"
+	maxcharge = 40000
+	charge = 40000
+	chargerate = 4000
+	hl13_flag = TRUE
+
 #undef CELL_DRAIN_TIME
 #undef CELL_POWER_GAIN
 #undef CELL_POWER_DRAIN

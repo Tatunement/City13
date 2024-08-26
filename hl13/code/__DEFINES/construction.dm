@@ -1,0 +1,8 @@
+//combine wall construction states
+#define ALLOY_PANELING_UNWELDED 1
+#define WIRE_GRID 2
+#define SUPPORT_BEAMS 3
+#define SUPPORT_STRUCTURE_WELDED 4
+#define SUPPORT_STRUCTURE_UNWELDED 5
+#define ELECTRONIC_PANEL 6
+#define DISMANTLED 7

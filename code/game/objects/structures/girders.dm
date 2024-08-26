@@ -17,7 +17,11 @@
 		/obj/item/stack/sheet/plasteel = 2,
 		/obj/item/stack/sheet/bronze = 2,
 		/obj/item/stack/sheet/runed_metal = 1,
-		exotic_material = 2 // this needs to be refactored properly
+		exotic_material = 2, // this needs to be refactored properly
+		//HL13 CODE//
+		/obj/item/stack/sheet/hl13/concrete = 3,
+		/obj/item/stack/sheet/iron/hl13/combine = 2
+		//HL13 CODE//
 	)
 
 /obj/structure/girder/examine(mob/user)
@@ -279,7 +283,7 @@
 		return ..()
 
 // Screwdriver behavior for girders
-/obj/structure/girder/screwdriver_act(mob/user, obj/item/tool)
+/*/obj/structure/girder/screwdriver_act(mob/user, obj/item/tool)
 	if(..())
 		return TRUE
 
@@ -322,10 +326,10 @@
 			if(state != GIRDER_REINF_STRUTS)
 				return
 			state = GIRDER_REINF
-		return TRUE
+		return TRUE */
 
 // Wirecutter behavior for girders
-/obj/structure/girder/wirecutter_act(mob/user, obj/item/tool)
+/*/obj/structure/girder/wirecutter_act(mob/user, obj/item/tool)
 	. = ..()
 	if(state == GIRDER_REINF_STRUTS)
 		balloon_alert(user, "removing inner grille...")
@@ -334,9 +338,9 @@
 			var/obj/structure/girder/G = new (loc)
 			transfer_fingerprints_to(G)
 			qdel(src)
-		return TRUE
+		return TRUE */
 
-/obj/structure/girder/wrench_act(mob/user, obj/item/tool)
+/*/obj/structure/girder/wrench_act(mob/user, obj/item/tool)
 	. = ..()
 	if(state == GIRDER_DISPLACED)
 		if(!isfloorturf(loc))
@@ -354,7 +358,7 @@
 			var/obj/structure/girder/displaced/D = new (loc)
 			transfer_fingerprints_to(D)
 			qdel(src)
-		return TRUE
+		return TRUE */
 
 /obj/structure/girder/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()

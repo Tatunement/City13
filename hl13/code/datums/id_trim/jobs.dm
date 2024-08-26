@@ -114,3 +114,19 @@
 		ACCESS_HOP,
 		)
 	job = /datum/job/city_administrator
+
+/datum/id_trim/job/cmb_worker
+	assignment = "Combine Worker"
+	trim_state = "assigned"
+	department_color = COLOR_BEIGE
+	sechud_icon_state = SECHUD_HL13_CITIZEN
+	minimal_access = list()
+	extra_access = list(
+		ACCESS_MAINT_TUNNELS,
+		)
+	template_access = list(
+		ACCESS_CAPTAIN,
+		ACCESS_CHANGE_IDS,
+		ACCESS_HOP,
+		)
+	job = /datum/job/cmb_worker

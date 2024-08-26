@@ -19,3 +19,11 @@
 	inhand_icon_state = "cp_mask_cpc"
 	hud_type = /obj/item/clothing/glasses/hud/hl13/combine/cp/night/commando
 	has_fov = FALSE
+
+/obj/item/clothing/mask/gas/hl13/combine/combine_worker
+	name = "Combine Worker Mask"
+	icon_state = "ec_mask_cw"
+	worn_icon_state = "ec_mask_cw"
+	inhand_icon_state = "ec_mask_cw"
+	hud_type = /obj/item/clothing/glasses/hl13/combine_worker
+	has_fov = FALSE

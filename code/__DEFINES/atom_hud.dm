@@ -134,5 +134,6 @@
 #define SECHUD_HL13_CWU_MEDIC "hudhl13medic"
 #define SECHUD_HL13_CWU_DIRECTOR "hudhl13cwudirector"
 #define SECHUD_HL13_CITY_ADMINISTRATOR "hudhl13administrator"
+#define SECHUD_HL13_CMB_WORKER "hudhl13cmbworker"
 
 //hl13 hud defines end

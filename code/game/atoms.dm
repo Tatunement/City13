@@ -1619,7 +1619,12 @@
 /// Called on an object when a tool with analyzer capabilities is used to right click an object
 /atom/proc/analyzer_act_secondary(mob/living/user, obj/item/tool)
 	return
-
+/// Called on an object when a tool with sledgehammer capabilities is used to left click an object
+/atom/proc/sledgehammer_act(mob/living/user, obj/item/tool)
+	return
+/// Called on an object when a tool with sledgehammer capabilities is used to right click an object
+/atom/proc/sledgehammer_act_secondary(mob/living/user, obj/item/tool)
+	return
 ///Connect this atom to a shuttle
 /atom/proc/connect_to_shuttle(mapload, obj/docking_port/mobile/port, obj/docking_port/stationary/dock)
 	return

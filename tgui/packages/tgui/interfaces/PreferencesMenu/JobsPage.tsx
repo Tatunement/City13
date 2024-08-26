@@ -365,20 +365,8 @@ export const JobsPage = () => {
 
               <PriorityHeaders />
 
-              <Department department="Engineering">
-                <Gap amount={6} />
-              </Department>
-
               <Department department="CivilWorkersUnion">
                 <Gap amount={6} />
-              </Department>
-
-              <Department department="Science">
-                <Gap amount={6} />
-              </Department>
-
-              <Department department="Silicon">
-                <Gap amount={12} />
               </Department>
 
               <Department department="Assistant" />
@@ -391,15 +379,9 @@ export const JobsPage = () => {
                 <Gap amount={6} />
               </Department>
 
-              <Department department="Captain">
+              <Department department="EngineerCore">
                 <Gap amount={6} />
               </Department>
-
-              <Department department="Service">
-                <Gap amount={6} />
-              </Department>
-
-              <Department department="Cargo" />
             </Stack.Item>
 
             <Stack.Item>

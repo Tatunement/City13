@@ -70,7 +70,7 @@
 
 /obj/item/clothing/mask/gas/hl13/combine/proc/remove_hud(mob/living/carbon/human/M)
 	handle_nv(M.wear_mask, FALSE, M)
-	if(istype(M.glasses, /obj/item/clothing/glasses/hud/hl13/combine/))
+	if(istype(M.glasses, /obj/item/clothing/glasses/hud/hl13/combine))
 		QDEL_NULL(M.glasses)
 
 /obj/item/clothing/mask/gas/hl13/combine/proc/handle_nv(mask, night_vision, mob/living/carbon/human/user)
@@ -125,5 +125,8 @@
 		actiontype.button_icon_state = icon_state
 		actiontype.build_all_button_icons()
 		SEND_SIGNAL(user.wear_mask, COMSIG_HANDLE_NIGHT_VISION, night_vision, user)
-
+/obj/item/clothing/mask/gas/hl13/combine/combine_worker/remove_hud(mob/living/carbon/human/M)
+	handle_nv(M.wear_mask, FALSE, M)
+	if(istype(M.glasses,/obj/item/clothing/glasses/hl13/combine_worker))
+		QDEL_NULL(M.glasses)
 #undef MASK_CAMERA_BUFFER
