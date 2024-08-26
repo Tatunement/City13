@@ -96,7 +96,8 @@
 
 	if(isAI(mob))
 		return AIMove(new_loc,direct,mob)
-
+	if(isdispatch(mob))
+		return DPMove(new_loc,direct,mob)
 	if(Process_Grab()) //are we restrained by someone's grip?
 		return
 

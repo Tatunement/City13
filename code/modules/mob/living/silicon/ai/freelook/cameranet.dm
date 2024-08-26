@@ -89,6 +89,40 @@ GLOBAL_DATUM_INIT(cameranet, /datum/cameranet, new)
 		for(var/datum/camerachunk/chunk as anything in add)
 			chunk.add(eye)
 
+/datum/cameranet/proc/dp_visibility(list/moved_eyes, client/C, list/other_eyes, use_static = TRUE)
+	if(!islist(moved_eyes))
+		moved_eyes = moved_eyes ? list(moved_eyes) : list()
+	if(islist(other_eyes))
+		other_eyes = (other_eyes - moved_eyes)
+	else
+		other_eyes = list()
+
+	for(var/mob/camera/dp_eye/eye as anything in moved_eyes)
+		var/list/visibleChunks = list()
+		//Get the eye's turf in case it's located in an object like a mask
+		var/turf/eye_turf = get_turf(eye)
+		if(istype(eye, /client)) // client shouldn't get passed through this
+			return
+		if(eye.loc)
+			var/static_range = eye.static_visibility_range
+			var/x1 = max(1, eye_turf.x - static_range)
+			var/y1 = max(1, eye_turf.y - static_range)
+			var/x2 = min(world.maxx, eye_turf.x + static_range)
+			var/y2 = min(world.maxy, eye_turf.y + static_range)
+
+			for(var/x = x1; x <= x2; x += CHUNK_SIZE)
+				for(var/y = y1; y <= y2; y += CHUNK_SIZE)
+					visibleChunks |= getCameraChunk(x, y, eye_turf.z)
+
+		var/list/remove = eye.visibleCameraChunks - visibleChunks
+		var/list/add = visibleChunks - eye.visibleCameraChunks
+
+		for(var/datum/camerachunk/chunk as anything in remove)
+			chunk.dp_remove(eye, FALSE)
+
+		for(var/datum/camerachunk/chunk as anything in add)
+			chunk.dp_add(eye)
+
 /// Updates the chunks that the turf is located in. Use this when obstacles are destroyed or when doors open.
 /datum/cameranet/proc/updateVisibility(atom/A, opacity_check = 1)
 	if(!SSticker || (opacity_check && !A.opacity))

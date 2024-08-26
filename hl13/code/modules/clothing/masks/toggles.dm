@@ -54,10 +54,10 @@
 		RegisterSignal(src, COMSIG_CAMERA_MOVE, PROC_REF(camera_update))
 		wearer = M
 		camera = new(M)
-		camera.c_tag = "[M.job] [camera_c_tag]"
+		camera.c_tag = "[M.name] [camera_c_tag]"
 	if(!M)
 		camera = new(src)
-		camera.c_tag = "[M.job] [camera_c_tag]"
+		camera.c_tag = "[M.name] [camera_c_tag]"
 
 /obj/item/clothing/mask/gas/hl13/combine/Move()
 	. = ..()

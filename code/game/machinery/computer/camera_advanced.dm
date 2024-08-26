@@ -224,7 +224,6 @@
 
 		if(use_static)
 			GLOB.cameranet.visibility(src, GetViewerClient(), null, use_static)
-
 		if(visible_icon)
 			if(eye_user.client)
 				eye_user.client.images -= user_image

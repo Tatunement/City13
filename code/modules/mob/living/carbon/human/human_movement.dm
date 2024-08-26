@@ -26,7 +26,8 @@
 
 /mob/living/carbon/human/Move(NewLoc, direct)
 	. = ..()
-	SEND_SIGNAL(wear_mask, COMSIG_CAMERA_MOVE)
+	if(wear_mask)
+		SEND_SIGNAL(wear_mask, COMSIG_CAMERA_MOVE)
 	if(shoes && body_position == STANDING_UP && loc == NewLoc && has_gravity(loc))
 		SEND_SIGNAL(shoes, COMSIG_SHOES_STEP_ACTION)
 

@@ -5266,6 +5266,7 @@
 #include "hl13\code\modules\jobs\cwu_member.dm"
 #include "hl13\code\modules\jobs\dispatch.dm"
 #include "hl13\code\modules\mob\living\silicon\ai\dispatch.dm"
+#include "hl13\code\modules\mob\living\silicon\ai\eye.dm"
 #include "hl13\code\modules\modular_computers\computers\item\pda.dm"
 #include "hl13\code\modules\modular_computers\file_system\programs\civilian_data.dm"
 #include "hl13\code\modules\modular_computers\file_system\programs\socio_stability_monitor.dm"

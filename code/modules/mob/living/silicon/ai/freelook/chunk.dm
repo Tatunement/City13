@@ -47,6 +47,25 @@
 	if(client && eye.use_static)
 		client.images -= active_static_images
 
+/datum/camerachunk/proc/dp_add(mob/camera/dp_eye/eye)
+	eye.visibleCameraChunks += src
+	seenby += eye
+	if(changed)
+		update()
+
+	var/client/client = eye.GetViewerClient()
+	if(client && eye.use_static)
+		client.images += active_static_images
+
+/// Remove an DP eye from the chunk
+/datum/camerachunk/proc/dp_remove(mob/camera/dp_eye/eye, remove_static_with_last_chunk = TRUE)
+	eye.visibleCameraChunks -= src
+	seenby -= eye
+
+	var/client/client = eye.GetViewerClient()
+	if(client && eye.use_static)
+		client.images -= active_static_images
+
 /// Called when a chunk has changed. I.E: A wall was deleted.
 /datum/camerachunk/proc/visibilityChanged(turf/loc)
 	if(!visibleTurfs[loc])
@@ -95,6 +114,12 @@
 			continue
 
 		client.images -= active_static_images
+	for(var/mob/camera/dp_eye/client_eye as anything in seenby)
+		var/client/client = client_eye.dp?.client || client_eye.client
+		if(!client)
+			continue
+
+		client.images -= active_static_images
 
 	for(var/turf/visible_turf as anything in newly_visible_turfs)
 		var/image/static_image = obscuredTurfs[visible_turf]
@@ -115,12 +140,19 @@
 
 		obscuredTurfs[obscured_turf] = static_image
 		active_static_images += static_image
+
 	visibleTurfs = updated_visible_turfs
 
 	changed = FALSE
 
 	for(var/mob/camera/ai_eye/client_eye as anything in seenby)
 		var/client/client = client_eye.ai?.client || client_eye.client
+		if(!client)
+			continue
+
+		client.images += active_static_images
+	for(var/mob/camera/dp_eye/client_eye as anything in seenby)
+		var/client/client = client_eye.dp?.client || client_eye.client
 		if(!client)
 			continue
 

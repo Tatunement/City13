@@ -20,7 +20,7 @@
 		if(!isturf(dp.loc))
 			return
 		destination = get_turf(destination)
-		if(!force_update && (destination == get_turf(src)) )
+		if(!force_update && (destination == get_turf(src)))
 			return //we are already here!
 		if (destination)
 			abstract_move(destination)
@@ -31,6 +31,10 @@
 		if(dp.client)
 			dp.client.set_eye(src)
 		update_parallax_contents()
+		dp.plane_static()
+
+/mob/camera/dp_eye/Move()
+	return
 
 /mob/living/silicon/hl13/dispatch/proc/create_eye()
 	if(eyeobj)
@@ -42,6 +46,7 @@
 	eyeobj.name = "[name] (Dispatch Eye)"
 	eyeobj.real_name = eyeobj.name
 	set_eyeobj_visible(TRUE)
+	plane_static()
 
 /mob/living/silicon/hl13/dispatch/proc/set_eyeobj_visible(state = TRUE)
 	if(!eyeobj)
@@ -67,6 +72,7 @@
 		user.sprint = min(user.sprint + 0.5, max_sprint)
 	else
 		user.sprint = initial
+	user.camera_visibility(src)
 
 /mob/camera/dp_eye/proc/GetViewerClient()
 	if(dp)
@@ -77,6 +83,7 @@
 	if(dp)
 		dp.all_eyes -= src
 		dp = null
+		dp.plane_static()
 	for(var/V in visibleCameraChunks)
 		var/datum/camerachunk/c = V
 		c.remove(src)
