@@ -5295,6 +5295,7 @@
 #include "hl13\code\modules\projectiles\guns\ballistic\pistol.dm"
 #include "hl13\code\modules\projectiles\guns\ballistic\shotgun.dm"
 #include "hl13\code\modules\projectiles\projectile\bullets.dm"
+#include "hl13\code\modules\projectiles\projectile\shotgun.dm"
 #include "hl13\code\modules\projectiles\projectile\pistol\mp7.dm"
 #include "hl13\code\modules\projectiles\projectile\pistol\pistol.dm"
 #include "hl13\code\modules\rations\nutrient_bars.dm"
