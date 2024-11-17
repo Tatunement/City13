@@ -3,7 +3,8 @@
 	desc = ""
 	icon = 'hl13/icons/obj/weapons/guns/ballistic.dmi'
 	icon_state = "spas12"
-	worn_icon_state = null
+	worn_icon = 'hl13/icons/obj/clothing/back.dmi'
+	worn_icon_state = "spas12"
 	lefthand_file = 'hl13/icons/mob/inhands/weapons/64x_guns_left.dmi'
 	righthand_file = 'hl13/icons/mob/inhands/weapons/64x_guns_right.dmi'
 	inhand_icon_state = "spas12"
