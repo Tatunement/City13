@@ -5,4 +5,4 @@
 	icon_state = "shotgunshell"
 	pellets = 7
 	variance = 25
-	projectile_type = /obj/projectile/bullet/hl13
+	projectile_type = /obj/projectile/bullet/hl13/shotgun
