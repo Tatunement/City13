@@ -14,7 +14,7 @@
  &mdash; <a href="code/__DEFINES/verb_manager.html#define">Define Details</a></header>
 <main>
 <h1>code/__DEFINES/verb_manager.dm 
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/__DEFINES/verb_manager.dm">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/__DEFINES/verb_manager.dm">
         <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;verb_manager.dm"/></a></h1>
 
 <table class="summary" cellspacing="0">
@@ -36,27 +36,27 @@ it will runtime.</td></tr>
         <tr><th><a href="code/__DEFINES/verb_manager.html#define/QUEUE_OR_CALL_VERB">QUEUE_OR_CALL_VERB</a></th><td>queue wrapper for TRY_QUEUE_VERB() when you want to call the proc if the server isnt overloaded enough to queue</td></tr></table><h2 id="define">Define Details</h2>
 <h3 id="define/QUEUE_OR_CALL_VERB"><aside class="declaration">#define </aside>QUEUE_OR_CALL_VERB
             <aside>(_verb_callback, _tick_check, _subsystem_to_use, _verification_args ...)</aside>
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/__DEFINES/verb_manager.dm#L25">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/__DEFINES/verb_manager.dm#L25">
         <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;verb_manager.dm 25"/></a>
     </h3>
     <p>queue wrapper for TRY_QUEUE_VERB() when you want to call the proc if the server isnt overloaded enough to queue</p><h3 id="define/TRY_QUEUE_VERB"><aside class="declaration">#define </aside>TRY_QUEUE_VERB
             <aside>(_verb_callback, _tick_check, _subsystem_to_use, _verification_args ...)</aside>
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/__DEFINES/verb_manager.dm#L23">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/__DEFINES/verb_manager.dm#L23">
         <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;verb_manager.dm 23"/></a>
     </h3>
     <p>attempt to queue this verb process if the server is overloaded. evaluates to FALSE if queuing isnt necessary or if it failed.
 _verification_args... are only necessary if the verb_manager subsystem youre using checks them in can_queue_verb()
 if you put anything in _verification_args that ISNT explicitely put in the can_queue_verb() override of the subsystem youre using,
 it will runtime.</p><h3 id="define/VERB_DEFAULT_QUEUE_THRESHOLD"><aside class="declaration">#define </aside>VERB_DEFAULT_QUEUE_THRESHOLD
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/__DEFINES/verb_manager.dm#L17">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/__DEFINES/verb_manager.dm#L17">
         <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;verb_manager.dm 17"/></a>
     </h3>
     <p>default queuing tick_usage threshold for most verbs which can allow a small amount of latency to be processed in the next tick</p><h3 id="define/VERB_HIGH_PRIORITY_QUEUE_THRESHOLD"><aside class="declaration">#define </aside>VERB_HIGH_PRIORITY_QUEUE_THRESHOLD
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/__DEFINES/verb_manager.dm#L15">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/__DEFINES/verb_manager.dm#L15">
         <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;verb_manager.dm 15"/></a>
     </h3>
     <p>queuing tick_usage threshold for verbs that need lower latency more than most verbs.</p><h3 id="define/VERB_OVERTIME_QUEUE_THRESHOLD"><aside class="declaration">#define </aside>VERB_OVERTIME_QUEUE_THRESHOLD
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/__DEFINES/verb_manager.dm#L13">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/__DEFINES/verb_manager.dm#L13">
         <img src="git.png" width="16" height="16" title="code&#x2F;__DEFINES&#x2F;verb_manager.dm 13"/></a>
     </h3>
     <p>verb queuing thresholds. remember that since verbs execute after SendMaps the player wont see the effects of the verbs on the game world
@@ -70,7 +70,7 @@ queuing tick_usage threshold for verbs that are high enough priority that they o
 ONLY use for critical verbs</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/61f60d03cd525337c98332828ede5eb3740b02aa">61f60d0</a>
+    <a href="https://github.com/Tatunement/City13/tree/afe0c5e696e647d85af2ada42c12a9ee3c1479be">afe0c5e</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

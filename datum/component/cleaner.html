@@ -16,7 +16,7 @@
 <h1>cleaner <aside>/<a href="datum.html">datum</a>/<a href="datum/component.html">component</a>/<a href="datum/component/cleaner.html">cleaner</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/datums/components/cleaner.dm#L7">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/cleaner.dm#L7">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;cleaner.dm 7"/></a></h1>
 
 <p>Component that can be used to clean things.
@@ -38,36 +38,36 @@ Redirects to afterattack, while setting parent (the bot) as user.</td></tr></tab
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/datums/components/cleaner.dm#L9">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/cleaner.dm#L9">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;cleaner.dm 9"/></a></h3>
         <p>The time it takes to clean something, without reductions from the cleaning skill modifier.</p><h3 id="var/cleaning_strength"><aside class="declaration">var </aside>cleaning_strength
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/datums/components/cleaner.dm#L13">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/cleaner.dm#L13">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;cleaner.dm 13"/></a></h3>
         <p>Determines what this cleaner can wash off, <a href="code/__DEFINES/cleaning.html">the available options are found here</a>.</p><h3 id="var/on_cleaned_callback"><aside class="declaration">var </aside>on_cleaned_callback
             <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/callback.html">callback</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/datums/components/cleaner.dm#L19">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/cleaner.dm#L19">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;cleaner.dm 19"/></a></h3>
         <p>Gets called when something is successfully cleaned.</p><h3 id="var/pre_clean_callback"><aside class="declaration">var </aside>pre_clean_callback
             <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/callback.html">callback</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/datums/components/cleaner.dm#L15">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/cleaner.dm#L15">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;cleaner.dm 15"/></a></h3>
         <p>Gets called before you start cleaning, returns TRUE/FALSE whether the clean should actually wash tiles, or DO_NOT_CLEAN to not clean at all.</p><h3 id="var/skill_duration_modifier_offset"><aside class="declaration">var </aside>skill_duration_modifier_offset
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/datums/components/cleaner.dm#L11">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/cleaner.dm#L11">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;cleaner.dm 11"/></a></h3>
         <p>Offsets the cleaning duration modifier that you get from your cleaning skill, the duration won't be modified to be more than the base duration.</p><h2 id="proc">Proc Details</h2><h3 id="proc/clean"><aside class="declaration">proc </aside>clean<aside>(/<a href="datum.html">datum</a>/source, /<a href="atom.html">atom</a>/target, /<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/user, clean_target) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/datums/components/cleaner.dm#L92">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/cleaner.dm#L92">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;cleaner.dm 92"/></a></aside>
         </h3>
         <p>Cleans something using this cleaner.
@@ -82,7 +82,7 @@ Successfully cleaning gives cleaning experience to the user and invokes the on_c
 </ul><h3 id="proc/on_afterattack"><aside class="declaration">proc </aside>on_afterattack<aside>(/<a href="datum.html">datum</a>/source, /<a href="atom.html">atom</a>/target, /<a href="mob.html">mob</a>/user, proximity_flag, click_parameters) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/datums/components/cleaner.dm#L68">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/cleaner.dm#L68">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;cleaner.dm 68"/></a></aside>
         </h3>
         <p>Handles the COMSIG_ITEM_AFTERATTACK signal by calling the clean proc.</p>
@@ -95,14 +95,14 @@ Successfully cleaning gives cleaning experience to the user and invokes the on_c
 </ul><h3 id="proc/on_unarmed_attack"><aside class="declaration">proc </aside>on_unarmed_attack<aside>(/<a href="datum.html">datum</a>/source, /<a href="atom.html">atom</a>/target, proximity_flags, modifiers) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/61f60d03cd525337c98332828ede5eb3740b02aa/code/datums/components/cleaner.dm#L55">
+            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/cleaner.dm#L55">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;cleaner.dm 55"/></a></aside>
         </h3>
         <p>Handles the COMSIG_LIVING_UNARMED_ATTACK signal used for cleanbots
 Redirects to afterattack, while setting parent (the bot) as user.</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/61f60d03cd525337c98332828ede5eb3740b02aa">61f60d0</a>
+    <a href="https://github.com/Tatunement/City13/tree/afe0c5e696e647d85af2ada42c12a9ee3c1479be">afe0c5e</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>
