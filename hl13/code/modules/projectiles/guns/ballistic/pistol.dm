@@ -28,3 +28,9 @@
 
 /obj/item/gun/ballistic/automatic/hl13/usp/no_mag
 	spawnwithmagazine = FALSE
+
+/obj/item/gun/ballistic/automatic/hl13/usp/zip
+	name = "Inprovied zip gun"
+	internal_magazine = TRUE
+	mag_type = /obj/item/ammo_box/magazine/internal/hl13/zip_mag
+	icon_state = "zipgun"
