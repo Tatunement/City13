@@ -18,6 +18,7 @@
 	dry_fire_sound = 'hl13/sound/weapons/gun/USP/dry_fire.ogg'
 	load_sound = 'hl13/sound/weapons/gun/AR2/ar2_reload.ogg'
 	rack_sound = 'hl13/sound/weapons/gun/AR2/ar2_reload_rotate.ogg'
+	casing_ejector = FALSE
 	fire_sound_volume = 90
 
 /obj/item/gun/ballistic/automatic/hl13/ar2/no_mag
@@ -26,20 +27,3 @@
 /obj/item/gun/ballistic/automatic/hl13/ar2/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/automatic_fire, 0.15 SECONDS)
-
-/obj/item/gun/ballistic/automatic/hl13/ar2/handle_chamber(empty_chamber = TRUE, from_firing = TRUE, chamber_next_round = TRUE)
-	if(!semi_auto && from_firing)
-		return
-	var/obj/item/ammo_casing/casing = chambered //Find chambered round
-	if(istype(casing)) //there's a chambered round
-		if(QDELING(casing))
-			stack_trace("Trying to move a qdeleted casing of type [casing.type]!")
-			chambered = null
-		else if(casing_ejector || !from_firing)
-			SEND_SIGNAL(casing, COMSIG_CASING_EJECTED)
-			del(casing)
-			chambered = null
-		else if(empty_chamber)
-			chambered = null
-	if (chamber_next_round && (magazine?.max_ammo > 1))
-		chamber_round()

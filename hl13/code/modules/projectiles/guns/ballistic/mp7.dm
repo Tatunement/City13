@@ -32,3 +32,11 @@
 /obj/item/gun/ballistic/automatic/hl13/mp7/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/automatic_fire, 0.1 SECONDS)
+
+/obj/item/gun/ballistic/automatic/hl13/mp7/luty
+	name = "Luty-9mm"
+	desc = "AH GOD ITS SO FUCKING UGLY"
+	icon_state = "luty"
+	mag_type = /obj/item/ammo_box/magazine/hl13/hl9mm/luty
+	recoil = 1
+	randomspread = 30
