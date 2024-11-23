@@ -18,12 +18,11 @@
 	time = 10 SECONDS
 	category = CAT_WEAPON_RANGED
 
-/datum/crafting_recipe/9mmcasing
-	name = "9mm"
+/datum/crafting_recipe/nine_casing
+	name = "9mm casing"
 	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WELDER)
 	result = /obj/item/ammo_casing/hl13/hl9mm
 	reqs = list(
-		/obj/item/ammo_casing/spent = 1,
 		/obj/item/stack/sheet/iron/hl13/metal = 1,
 		/datum/reagent/fuel = 1,
 	)
