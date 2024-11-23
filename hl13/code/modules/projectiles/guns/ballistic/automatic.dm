@@ -5,7 +5,7 @@
 	righthand_file = 'hl13/icons/mob/inhands/weapons/guns_righthand.dmi'
 	lefthand_file = 'hl13/icons/mob/inhands/weapons/guns_lefthand.dmi'
 	icon_state = "ar2"
-	inhand_icon_state = "mp7"
+	inhand_icon_state = "ar2"
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/hl13/ar2
 	vary_fire_sound = FALSE
@@ -16,8 +16,7 @@
 	bolt_type = BOLT_TYPE_OPEN
 	fire_sound = 'hl13/sound/weapons/gun/AR2/fire1.ogg'
 	dry_fire_sound = 'hl13/sound/weapons/gun/USP/dry_fire.ogg'
-	load_sound = 'hl13/sound/weapons/gun/AR2/ar2_reload.ogg'
-	rack_sound = 'hl13/sound/weapons/gun/AR2/ar2_reload_rotate.ogg'
+	load_sound = 'hl13/sound/weapons/gun/AR2/ar2_reload_rotate.ogg'
 	casing_ejector = FALSE
 	fire_sound_volume = 90
 
@@ -68,6 +67,7 @@
 	name = "Luty-9mm"
 	desc = "AH GOD ITS SO FUCKING UGLY"
 	icon_state = "luty"
+	inhand_icon_state = "luty"
 	mag_type = /obj/item/ammo_box/magazine/hl13/hl9mm/luty
 	recoil = 1
 	randomspread = 30
