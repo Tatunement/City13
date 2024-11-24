@@ -16,7 +16,7 @@
 <h1>hazard_area <aside>/<a href="datum.html">datum</a>/<a href="datum/component.html">component</a>/<a href="datum/component/hazard_area.html">hazard_area</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L7">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L7">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 7"/></a></h1>
 
 <p>This is a relatively simple component that attempts to deter the parent of the component away
@@ -42,30 +42,30 @@ If there aren't any overwritten area's it assumes it to be non-hazardous, abuse 
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L9">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L9">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 9"/></a></h3>
         <p>The blacklist of areas that the parent will be penalized for entering</p><h3 id="var/area_created"><aside class="declaration">var </aside>area_created
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L13">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L13">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 13"/></a></h3>
         <p>A list of areas that have been created and are considered to not be hazardous</p><h3 id="var/area_whitelist"><aside class="declaration">var </aside>area_whitelist
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L11">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L11">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 11"/></a></h3>
         <p>The whitelist of areas that the parent is allowed to be in. If set this overrides the blacklist</p><h3 id="var/last_parent_area"><aside class="declaration">var </aside>last_parent_area
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L17">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L17">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 17"/></a></h3>
         <p>A variable storing the typepath of the last checked area to prevent any further logic running if it has not changed</p><h2 id="proc">Proc Details</h2><h3 id="proc/check_area_hazardous"><aside class="declaration">proc </aside>check_area_hazardous<aside>(/<a href="area.html">area</a>/checking) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L77">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L77">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 77"/></a></aside>
         </h3>
         <p>Checks if the area being checked is considered hazardous
@@ -75,13 +75,13 @@ The whitelist is checked first if it exists, otherwise it checks if it is in the
 </ul><h3 id="proc/handle_parent_area_change"><aside class="declaration">proc </aside>handle_parent_area_change<aside>(/<a href="mob.html">mob</a>/source, /<a href="area.html">area</a>/new_area) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L138">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L138">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 138"/></a></aside>
         </h3>
         <p>This signal should be called whenever our parent moves.</p><h3 id="proc/on_area_creation"><aside class="declaration">proc </aside>on_area_creation<aside>(/<a href="datum.html">datum</a>/source, /<a href="area.html">area</a>/created, /list/area/overwritten, /<a href="mob.html">mob</a>/creator) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L93">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L93">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 93"/></a></aside>
         </h3>
         <p>This signal handler does a few house cleaning tasks when a new area is created.
@@ -91,25 +91,25 @@ allow the parent.
 If there aren't any overwritten area's it assumes it to be non-hazardous, abuse it and you will weep -ZephyrTFA</p><h3 id="proc/reject_ladder_movement"><aside class="declaration">proc </aside>reject_ladder_movement<aside>(/<a href="mob.html">mob</a>/source, /<a href="obj.html">obj</a>/entrance_ladder, exit_ladder, going_up) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L49">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L49">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 49"/></a></aside>
         </h3>
         <p>This signal handler checks the area the target ladder is in and if hazardous prevents them from using it</p><h3 id="proc/reject_vehicle"><aside class="declaration">proc </aside>reject_vehicle<aside>(/<a href="mob.html">mob</a>/source, /<a href="obj.html">obj</a>/<a href="obj/vehicle.html">vehicle</a>/vehicle) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L59">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L59">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 59"/></a></aside>
         </h3>
         <p>A simple signal handler that informs the parent they cannot ride a vehicle and ejects them</p><h3 id="proc/update_parent_status_effect"><aside class="declaration">proc </aside>update_parent_status_effect<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/hazard_area.dm#L117">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/hazard_area.dm#L117">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;hazard_area.dm 117"/></a></aside>
         </h3>
         <p>This proc handles the status effect applied to the parent, most noteably applying or removing it as required</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/afe0c5e696e647d85af2ada42c12a9ee3c1479be">afe0c5e</a>
+    <a href="https://github.com/Tatunement/City13/tree/3553696009954c3db6619c59c6bdcdf0d4a44c30">3553696</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

@@ -16,7 +16,7 @@
 <h1>brain <aside>/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/organ.html">organ</a>/<a href="obj/item/organ/internal.html">internal</a>/<a href="obj/item/organ/internal/brain.html">brain</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L1">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L1">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 1"/></a></h1>
 
 <table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
@@ -48,55 +48,55 @@ DOES NOT handle removing the trauma's effects, that's done by <a href="datum.htm
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L30">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L30">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 30"/></a></h3>
         <p>Two variables necessary for calculating whether we get a brain trauma or not</p><h3 id="var/decay_factor">decay_factor
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L17">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L17">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 17"/></a></h3>
         <p>The brain's organ variables are significantly more different than the other organs, with half the decay rate for balance reasons, and twice the maxHealth</p><h3 id="var/decoy_override"><aside class="declaration">var </aside>decoy_override
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L28">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L28">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 28"/></a></h3>
         <p>If it's a fake brain with no brainmob assigned. Feedback messages will be faked as if it does have a brainmob. See changelings &amp; dullahans.</p><h3 id="var/max_skillchip_complexity"><aside class="declaration">var </aside>max_skillchip_complexity
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L38">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L38">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 38"/></a></h3>
         <p>Maximum skillchip complexity we can support before they stop working. Do not reference this var directly and instead call get_max_skillchip_complexity()</p><h3 id="var/max_skillchip_slots"><aside class="declaration">var </aside>max_skillchip_slots
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L40">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L40">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 40"/></a></h3>
         <p>Maximum skillchip slots available. Do not reference this var directly and instead call get_max_skillchip_slots()</p><h3 id="var/skillchips"><aside class="declaration">var </aside>skillchips
             <aside>&ndash; /list/obj/item/skillchip</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L36">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L36">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 36"/></a></h3>
         <p>List of skillchip items, their location should be this brain.</p><h2 id="proc">Proc Details</h2><h3 id="proc/activate_skillchip_failsafe"><aside class="declaration">proc </aside>activate_skillchip_failsafe<aside>(silent) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L133">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L133">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 133"/></a></aside>
         </h3>
         <p>Deactivates all chips currently in the brain.</p><h3 id="proc/add_trauma_to_traumas"><aside class="declaration">proc </aside>add_trauma_to_traumas<aside>(/<a href="datum.html">datum</a>/brain_trauma/trauma) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L463">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L463">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 463"/></a></aside>
         </h3>
         <p>Adds the passed trauma instance to our list of traumas and links it to our brain.
 DOES NOT handle setting up the trauma, that's done by [proc/brain_gain_trauma]!</p><h3 id="proc/clone_skillchip_list"><aside class="declaration">proc </aside>clone_skillchip_list<aside>(not_removable) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L53">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L53">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 53"/></a></aside>
         </h3>
         <p>Creates a list of assoc lists containing skillchip types and key metadata.</p>
@@ -108,7 +108,7 @@ Arguments:</p>
 </ul><h3 id="proc/destroy_all_skillchips"><aside class="declaration">proc </aside>destroy_all_skillchips<aside>(silent) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L79">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L79">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 79"/></a></aside>
         </h3>
         <p>Destroys all skillchips in the brain, calling on_removal if the brain has an owner.
@@ -118,43 +118,43 @@ Arguments:</p>
 </ul><h3 id="proc/get_attacking_limb"><aside class="declaration">proc </aside>get_attacking_limb<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/<a href="mob/living/carbon/human.html">human</a>/target) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L511">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L511">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 511"/></a></aside>
         </h3>
         <p>This proc lets the mob's brain decide what bodypart to attack with in an unarmed strike.</p><h3 id="proc/get_max_skillchip_complexity"><aside class="declaration">proc </aside>get_max_skillchip_complexity<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L89">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L89">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 89"/></a></aside>
         </h3>
         <p>Returns the total maximum skillchip complexity supported by this brain.</p><h3 id="proc/get_max_skillchip_slots"><aside class="declaration">proc </aside>get_max_skillchip_slots<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L114">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L114">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 114"/></a></aside>
         </h3>
         <p>Returns the total maximum skillchip slot capacity supported by this brain.</p><h3 id="proc/get_used_skillchip_complexity"><aside class="declaration">proc </aside>get_used_skillchip_complexity<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L98">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L98">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 98"/></a></aside>
         </h3>
         <p>Returns the total current skillchip complexity used in this brain.</p><h3 id="proc/get_used_skillchip_slots"><aside class="declaration">proc </aside>get_used_skillchip_slots<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L120">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L120">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 120"/></a></aside>
         </h3>
         <p>Returns the total current skillchip slot capacity used in this brain.</p><h3 id="proc/has_trauma_type"><aside class="declaration">proc </aside>has_trauma_type<aside>(brain_trauma_type, resilience) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L378">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L378">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 378"/></a></aside>
         </h3>
         <p>TRAUMAS</p><h3 id="proc/implant_skillchip"><aside class="declaration">proc </aside>implant_skillchip<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/skillchip.html">skillchip</a>/skillchip, force) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L30">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L30">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 30"/></a></aside>
         </h3>
         <p>Attempts to implant target skillchip into the brain.</p>
@@ -169,7 +169,7 @@ Arguments:</p>
 </ul><h3 id="proc/remove_skillchip"><aside class="declaration">proc </aside>remove_skillchip<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/skillchip.html">skillchip</a>/skillchip, silent) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L9">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L9">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 9"/></a></aside>
         </h3>
         <p>Attempts to remove target skillchip from the brain.</p>
@@ -181,26 +181,26 @@ Arguments:</p>
 </ul><h3 id="proc/remove_trauma_from_traumas"><aside class="declaration">proc </aside>remove_trauma_from_traumas<aside>(/<a href="datum.html">datum</a>/brain_trauma/trauma) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L469">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L469">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 469"/></a></aside>
         </h3>
         <p>Removes the passed trauma instance to our list of traumas and links it to our brain
 DOES NOT handle removing the trauma's effects, that's done by <a href="datum.html" title="/datum">/datum/brain_trauma/Destroy()</a>!</p><h3 id="proc/replace_into"><aside class="parent"><a title="/obj/item/organ" href="obj/item/organ.html#proc/replace_into">&uarr;</a></aside>replace_into<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/carbon.html">carbon</a>/new_owner) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/brain_item.dm#L519">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/brain_item.dm#L519">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;brain_item.dm 519"/></a></aside>
         </h3>
         <p>Brains REALLY like ghosting people. we need special tricks to avoid that, namely removing the old brain with no_id_transfer</p><h3 id="proc/update_skillchips"><aside class="declaration">proc </aside>update_skillchips<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/modules/mob/living/brain/skillchip.dm#L157">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/modules/mob/living/brain/skillchip.dm#L157">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;brain&#x2F;skillchip.dm 157"/></a></aside>
         </h3>
         <p>Disables or re-enables any extra skillchips after skillchip limit changes.</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/afe0c5e696e647d85af2ada42c12a9ee3c1479be">afe0c5e</a>
+    <a href="https://github.com/Tatunement/City13/tree/3553696009954c3db6619c59c6bdcdf0d4a44c30">3553696</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

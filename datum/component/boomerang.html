@@ -16,7 +16,7 @@
 <h1>boomerang <aside>/<a href="datum.html">datum</a>/<a href="datum/component.html">component</a>/<a href="datum/component/boomerang.html">boomerang</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/boomerang.dm#L7">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/boomerang.dm#L7">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;boomerang.dm 7"/></a></h1>
 
 <p>If an ojvect is given the boomerang component, it should be thrown back to the thrower after either hitting it's target, or landing on the thrown tile.
@@ -32,24 +32,24 @@ Thrown objects should be thrown back to the original thrower with this component
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/boomerang.dm#L9">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/boomerang.dm#L9">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;boomerang.dm 9"/></a></h3>
         <p>How far should the boomerang try to travel to return to the thrower?</p><h3 id="var/last_boomerang_throw"><aside class="declaration">var </aside>last_boomerang_throw
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/boomerang.dm#L13">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/boomerang.dm#L13">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;boomerang.dm 13"/></a></h3>
         <p>This cooldown prevents our 2 throwing signals from firing too often based on how we implement those signals within thrown impacts.</p><h3 id="var/thrower_easy_catch_enabled"><aside class="declaration">var </aside>thrower_easy_catch_enabled
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/boomerang.dm#L11">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/boomerang.dm#L11">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;boomerang.dm 11"/></a></h3>
         <p>If this boomerang is thrown, does it re-enable the throwers throw mode?</p><h2 id="proc">Proc Details</h2><h3 id="proc/aerodynamic_swing"><aside class="declaration">proc </aside>aerodynamic_swing<aside>(/<a href="datum.html">datum</a>/<a href="datum/thrownthing.html">thrownthing</a>/throwing_datum, /<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/true_parent) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/boomerang.dm#L78">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/boomerang.dm#L78">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;boomerang.dm 78"/></a></aside>
         </h3>
         <p>Proc that triggers when the thrown boomerang has been fully thrown, rethrowing the boomerang back to the thrower, and producing visible feedback.</p>
@@ -59,7 +59,7 @@ Thrown objects should be thrown back to the original thrower with this component
 </ul><h3 id="proc/prepare_throw"><aside class="declaration">proc </aside>prepare_throw<aside>(/<a href="datum.html">datum</a>/source, /<a href="datum.html">datum</a>/<a href="datum/thrownthing.html">thrownthing</a>/thrown_thing, spin) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/boomerang.dm#L40">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/boomerang.dm#L40">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;boomerang.dm 40"/></a></aside>
         </h3>
         <p>Proc'd before the first thrown is performed in order to gather information regarding each throw as well as handle throw_mode as necessary.</p>
@@ -70,7 +70,7 @@ Thrown objects should be thrown back to the original thrower with this component
 </ul><h3 id="proc/return_hit_throw"><aside class="declaration">proc </aside>return_hit_throw<aside>(/<a href="datum.html">datum</a>/source, /<a href="atom.html">atom</a>/hit_atom, /<a href="datum.html">datum</a>/<a href="datum/thrownthing.html">thrownthing</a>/init_throwing_datum) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/boomerang.dm#L54">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/boomerang.dm#L54">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;boomerang.dm 54"/></a></aside>
         </h3>
         <p>Proc that triggers when the thrown boomerang hits an object.</p>
@@ -81,7 +81,7 @@ Thrown objects should be thrown back to the original thrower with this component
 </ul><h3 id="proc/return_missed_throw"><aside class="declaration">proc </aside>return_missed_throw<aside>(/<a href="datum.html">datum</a>/source, /<a href="datum.html">datum</a>/<a href="datum/thrownthing.html">thrownthing</a>/throwing_datum) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/datums/components/boomerang.dm#L66">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/boomerang.dm#L66">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;boomerang.dm 66"/></a></aside>
         </h3>
         <p>Proc that triggers when the thrown boomerang does not hit a target.</p>
@@ -91,7 +91,7 @@ Thrown objects should be thrown back to the original thrower with this component
 </ul></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/afe0c5e696e647d85af2ada42c12a9ee3c1479be">afe0c5e</a>
+    <a href="https://github.com/Tatunement/City13/tree/3553696009954c3db6619c59c6bdcdf0d4a44c30">3553696</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

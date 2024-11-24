@@ -16,7 +16,7 @@
 <h1>movement_packet <aside>/<a href="datum.html">datum</a>/<a href="datum/movement_packet.html">movement_packet</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/controllers/subsystem/movement/move_handler.dm#L52">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/controllers/subsystem/movement/move_handler.dm#L52">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 52"/></a></h1>
 
 <p>A packet of information that describes the current state of a moving object</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
@@ -30,42 +30,42 @@
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/controllers/subsystem/movement/move_handler.dm#L58">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/controllers/subsystem/movement/move_handler.dm#L58">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 58"/></a></h3>
         <p>Assoc list of subsystems -&gt; loop datum. Only one datum is allowed per subsystem</p><h3 id="var/parent"><aside class="declaration">var </aside>parent
             <aside>&ndash; /<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/controllers/subsystem/movement/move_handler.dm#L54">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/controllers/subsystem/movement/move_handler.dm#L54">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 54"/></a></h3>
         <p>Our parent atom</p><h3 id="var/running_loop"><aside class="declaration">var </aside>running_loop
             <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/move_loop.html">move_loop</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/controllers/subsystem/movement/move_handler.dm#L56">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/controllers/subsystem/movement/move_handler.dm#L56">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 56"/></a></h3>
         <p>The move loop that's currently running</p><h2 id="proc">Proc Details</h2><h3 id="proc/add_loop"><aside class="declaration">proc </aside>add_loop<aside>(/<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/<a href="datum/controller/subsystem/movement.html">movement</a>/subsystem, /<a href="datum.html">datum</a>/<a href="datum/move_loop.html">move_loop</a>/loop_type, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/controllers/subsystem/movement/move_handler.dm#L77">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/controllers/subsystem/movement/move_handler.dm#L77">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 77"/></a></aside>
         </h3>
         <p>Adds a loop to our parent. Returns the created loop if a success, null otherwise</p><h3 id="proc/contest_running_loop"><aside class="declaration">proc </aside>contest_running_loop<aside>(/<a href="datum.html">datum</a>/<a href="datum/move_loop.html">move_loop</a>/contestant) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/controllers/subsystem/movement/move_handler.dm#L102">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/controllers/subsystem/movement/move_handler.dm#L102">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 102"/></a></aside>
         </h3>
         <p>Attempts to contest the current running move loop. Returns TRUE if the loop is active, FALSE otherwise</p><h3 id="proc/decide_on_running_loop"><aside class="declaration">proc </aside>decide_on_running_loop<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/afe0c5e696e647d85af2ada42c12a9ee3c1479be/code/controllers/subsystem/movement/move_handler.dm#L123">
+            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/controllers/subsystem/movement/move_handler.dm#L123">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 123"/></a></aside>
         </h3>
         <p>Tries to figure out the current favorite loop to run. More complex then just deciding between two different loops, assumes no running loop currently exists</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/afe0c5e696e647d85af2ada42c12a9ee3c1479be">afe0c5e</a>
+    <a href="https://github.com/Tatunement/City13/tree/3553696009954c3db6619c59c6bdcdf0d4a44c30">3553696</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>
