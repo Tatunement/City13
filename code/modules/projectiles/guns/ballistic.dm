@@ -246,10 +246,19 @@
 			stack_trace("Trying to move a qdeleted casing of type [casing.type]!")
 			chambered = null
 		else if(casing_ejector || !from_firing)
-			casing.forceMove(drop_location()) //Eject casing onto ground.
-			casing.bounce_away(TRUE)
-			SEND_SIGNAL(casing, COMSIG_CASING_EJECTED)
-			chambered = null
+			if(casing.hl13_flag)
+				var/obj/item/ammo_casing/empty_casing = casing.hl13_casing_empty
+				new empty_casing(drop_location())
+				var/turf/T = get_turf(drop_location())
+				playsound(drop_location(), T.bullet_bounce_sound, 20, TRUE)
+				SEND_SIGNAL(casing, COMSIG_CASING_EJECTED)
+				chambered = null
+				del(casing)
+			else
+				casing.forceMove(drop_location()) //Eject casing onto ground.
+				casing.bounce_away(TRUE)
+				SEND_SIGNAL(casing, COMSIG_CASING_EJECTED)
+				chambered = null
 		else if(empty_chamber)
 			chambered = null
 	if (chamber_next_round && (magazine?.max_ammo > 1))

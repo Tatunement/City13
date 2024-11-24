@@ -5285,6 +5285,7 @@
 #include "hl13\code\modules\modular_computers\computers\item\pda.dm"
 #include "hl13\code\modules\modular_computers\file_system\programs\civilian_data.dm"
 #include "hl13\code\modules\modular_computers\file_system\programs\socio_stability_monitor.dm"
+#include "hl13\code\modules\projectiles\ammunition\_ammunition.dm"
 #include "hl13\code\modules\projectiles\ammunition\ballistic\automatic.dm"
 #include "hl13\code\modules\projectiles\ammunition\ballistic\pistol.dm"
 #include "hl13\code\modules\projectiles\ammunition\ballistic\shotgun.dm"

@@ -33,6 +33,8 @@
 	var/heavy_metal = TRUE
 	///pacifism check for boolet, set to FALSE if bullet is non-lethal
 	var/harmful = TRUE
+	///The hl13 alternate empty casing used for things like crafting
+	var/obj/item/ammo_casing/hl13_casing_empty
 
 /obj/item/ammo_casing/spent
 	name = "spent bullet casing"
@@ -80,7 +82,8 @@
 	return readout.Join("\n") // Sending over a single string, rather than the whole list
 
 /obj/item/ammo_casing/update_icon_state()
-	icon_state = "[initial(icon_state)][loaded_projectile ? "-live" : null]"
+	if(!hl13_flag)
+		icon_state = "[initial(icon_state)][loaded_projectile ? "-live" : null]"
 	return ..()
 
 /obj/item/ammo_casing/update_desc()

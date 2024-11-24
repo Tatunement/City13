@@ -24,6 +24,7 @@
 	result = /obj/item/ammo_casing/hl13/hl9mm
 	reqs = list(
 		/obj/item/stack/sheet/iron/hl13/metal = 1,
+		/obj/item/ammo_casing/hl13/hl9mm/casing_empty = 1,
 		/datum/reagent/fuel = 1,
 	)
 	time = 1 SECONDS
