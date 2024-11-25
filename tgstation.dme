@@ -5207,6 +5207,7 @@
 #include "hl13\code\datums\mood_events\generic_negative_events.dm"
 #include "hl13\code\datums\mood_events\generic_positive_events.dm"
 #include "hl13\code\game\area\areas.dm"
+#include "hl13\code\game\machinery\ration_dispenser.dm"
 #include "hl13\code\game\machinery\computer\combine_terminal.dm"
 #include "hl13\code\game\machinery\computer\workforce_intake_terminal.dm"
 #include "hl13\code\game\objects\effects\contraband.dm"
