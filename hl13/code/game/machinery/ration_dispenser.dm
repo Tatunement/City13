@@ -4,9 +4,10 @@
 
 /obj/machinery/hl13/ration_dispenser/Initialize(mapload)
 	. = ..()
-	if(NORTH)
-		pixel_y = 3
-	if(EAST)
-		pixel_x = 3
-	if(WEST)
-		pixel_x = -3
+	switch(dir)
+		if(NORTH)
+			pixel_y = 8
+		if(EAST)
+			pixel_x = 7
+		if(WEST)
+			pixel_x = -7
