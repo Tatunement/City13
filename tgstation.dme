@@ -5201,6 +5201,7 @@
 #include "code\modules\wiremod\shell\shell_items.dm"
 #include "code\modules\zombie\items.dm"
 #include "code\modules\zombie\organs.dm"
+#include "hl13\code\__DEFINES\access.dm"
 #include "hl13\code\__DEFINES\construction.dm"
 #include "hl13\code\datums\toggles.dm"
 #include "hl13\code\datums\id_trim\jobs.dm"

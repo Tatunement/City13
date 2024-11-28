@@ -3,14 +3,14 @@
 	trim_state = "assigned"
 	department_color = COLOR_NAVY
 	sechud_icon_state = SECHUD_HL13_CITIZEN
-	minimal_access = list()
+	minimal_access = list(
+		ACCESS_RATION_STANDARD,
+		)
 	extra_access = list(
-		ACCESS_MAINT_TUNNELS,
+		ACCESS_RATION_STANDARD,
 		)
 	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_HOP,
+		ACCESS_RATION_STANDARD,
 		)
 	job = /datum/job/citizen
 
@@ -19,14 +19,14 @@
 	trim_state = "assigned"
 	department_color = COLOR_CP_BLUE
 	sechud_icon_state = SECHUD_HL13_CIVIL_PROTECTION
-	minimal_access = list()
+	minimal_access = list(
+		ACCESS_RATION_PRIORITY,
+		)
 	extra_access = list(
-		ACCESS_MAINT_TUNNELS,
+		ACCESS_RATION_PRIORITY,
 		)
 	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_HOP,
+		ACCESS_RATION_PRIORITY,
 		)
 	job = /datum/job/civil_protection
 
@@ -35,14 +35,13 @@
 	trim_state = "assigned"
 	department_color = COLOR_ADMINISTRATION_RED
 	sechud_icon_state = SECHUD_HL13_CIVIL_PROTECTION_COMMANDER
-	minimal_access = list()
+	minimal_access = list(
+		ACCESS_RATION_SERVICE,)
 	extra_access = list(
-		ACCESS_MAINT_TUNNELS,
+		ACCESS_RATION_SERVICE,
 		)
 	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_HOP,
+		ACCESS_RATION_SERVICE,
 		)
 	job = /datum/job/civil_protection_commander
 
@@ -51,14 +50,14 @@
 	trim_state = "assigned"
 	department_color = COLOR_CWU_YELLOW
 	sechud_icon_state = SECHUD_HL13_CWU_MEMBER
-	minimal_access = list()
+	minimal_access = list(
+		ACCESS_RATION_PRIORITY,
+		)
 	extra_access = list(
-		ACCESS_MAINT_TUNNELS,
+		ACCESS_RATION_PRIORITY,
 		)
 	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_HOP,
+		ACCESS_RATION_PRIORITY,
 		)
 	job = /datum/job/cwu_member
 /datum/id_trim/job/cwu_medic
@@ -66,14 +65,12 @@
 	trim_state = "assigned"
 	department_color = COLOR_CWU_YELLOW
 	sechud_icon_state = SECHUD_HL13_CWU_MEDIC
-	minimal_access = list()
+	minimal_access = list(ACCESS_RATION_PRIORITY)
 	extra_access = list(
-		ACCESS_MAINT_TUNNELS,
+		ACCESS_RATION_PRIORITY,
 		)
 	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_HOP,
+		ACCESS_RATION_PRIORITY,
 		)
 	job = /datum/job/cwu_medic
 
@@ -82,14 +79,12 @@
 	trim_state = "assigned"
 	department_color = COLOR_ADMINISTRATION_RED
 	sechud_icon_state = SECHUD_HL13_CWU_DIRECTOR
-	minimal_access = list()
+	minimal_access = list(ACCESS_RATION_SERVICE)
 	extra_access = list(
-		ACCESS_MAINT_TUNNELS,
+		ACCESS_RATION_SERVICE,
 		)
 	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_HOP,
+		ACCESS_RATION_SERVICE,
 		)
 	job = /datum/job/cwu_director
 
@@ -104,14 +99,12 @@
 	trim_state = "assigned"
 	department_color = COLOR_ADMINISTRATION_RED
 	sechud_icon_state = SECHUD_HL13_CITY_ADMINISTRATOR
-	minimal_access = list()
+	minimal_access = list(ACCESS_RATION_SERVICE)
 	extra_access = list(
-		ACCESS_MAINT_TUNNELS,
+		ACCESS_RATION_SERVICE,
 		)
 	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_HOP,
+		ACCESS_RATION_SERVICE,
 		)
 	job = /datum/job/city_administrator
 
@@ -120,13 +113,11 @@
 	trim_state = "assigned"
 	department_color = COLOR_BEIGE
 	sechud_icon_state = SECHUD_HL13_CITIZEN
-	minimal_access = list()
+	minimal_access = list(ACCESS_RATION_PRIORITY)
 	extra_access = list(
-		ACCESS_MAINT_TUNNELS,
+		ACCESS_RATION_PRIORITY,
 		)
 	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_HOP,
+		ACCESS_RATION_PRIORITY,
 		)
 	job = /datum/job/cmb_worker
