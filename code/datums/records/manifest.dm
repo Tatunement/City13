@@ -136,6 +136,7 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 		rank = assignment,
 		species = person.dna.species.name,
 		trim = assignment,
+		ration_unit = person.mind.assigned_role.starting_ration_unit,
 		// Crew specific
 		lock_ref = REF(lockfile),
 		major_disabilities = person.get_quirk_string(FALSE, CAT_QUIRK_MAJOR_DISABILITY),

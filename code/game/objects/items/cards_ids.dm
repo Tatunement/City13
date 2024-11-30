@@ -1633,11 +1633,22 @@
 	icon_state = "ctf_green"
 
 //hl13 code
-
 /obj/item/card/id/advanced/hl13
 	name = "Combine identification card"
 	desc = ""
 	icon_state = "card_hl13"
+	registered_account = null
+
+/obj/item/card/id/advanced/hl13/try_project_paystand(mob/user, turf/target)
+	return
+/obj/item/card/id/advanced/hl13/examine(mob/user)
+	. = ..()
+	if(!.)
+		return
+	for(var/datum/record/crew/target as anything in GLOB.manifest.general)
+		if(target.name == registered_name)
+			. += span_notice("[target.name] has [target.ration_unit] ration units on record.")
+
 //hl13 cards end
 #undef INTERN_THRESHOLD_FALLBACK_HOURS
 #undef ID_ICON_BORDERS
