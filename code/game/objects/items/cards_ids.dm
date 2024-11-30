@@ -1639,8 +1639,13 @@
 	icon_state = "card_hl13"
 	registered_account = null
 
+/obj/item/card/id/advanced/hl13/Initialize(mapload)
+	. = ..()
+	clear_account()
+
 /obj/item/card/id/advanced/hl13/try_project_paystand(mob/user, turf/target)
 	return
+
 /obj/item/card/id/advanced/hl13/examine(mob/user)
 	. = ..()
 	if(!.)

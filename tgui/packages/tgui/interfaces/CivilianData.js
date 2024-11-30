@@ -42,7 +42,8 @@ export const CivilianData = (props, context) => {
                   ' ' +
                   record.age +
                   ' ' +
-                  record.fingerprint
+                  record.fingerprint,
+                ' ' + record.rationunit
               )
             )
           }>
@@ -60,6 +61,8 @@ export const CivilianData = (props, context) => {
           Age: {record.age}
           <br />
           Fingerprint Hash: {record.fingerprint}
+          <br />
+          Ration Units: {record.rationunit}
           <br />
           <br />
           Criminal Status: {record.wanted || 'DELETED'}

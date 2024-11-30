@@ -27,19 +27,34 @@
 				target.ration_unit -= 1
 				ration_access = TRUE
 	if(!ration_access)
+		serve_animation(FALSE)
 		return
 	for(var/f in access)
 		if(f == ACCESS_RATION_SERVICE)
 			new /obj/item/storage/hl13/ration_pack/service_ration(src.loc)
+			serve_animation()
 			return
 		if(f == ACCESS_RATION_PRIORITY || collaborator)
 			new /obj/item/storage/hl13/ration_pack/priority_ration(src.loc)
+			serve_animation()
 			return
 		if(f == ACCESS_RATION_STANDARD)
 			new /obj/item/storage/hl13/ration_pack/standard_ration(src.loc)
+			serve_animation()
 			return
 		else
 			new /obj/item/storage/hl13/ration_pack/biotic(src.loc)
+			serve_animation()
 			return
 
-
+/obj/machinery/hl13/ration_dispenser/proc/serve_animation(serve = TRUE)
+	if(serve)
+		playsound(src, 'hl13/sound/computer/combine_terminal_idle1.ogg',30)
+		icon_state = "rationdispenser-dispense"
+		sleep(1 SECONDS)
+		icon_state = "rationdispenser"
+	else
+		playsound(src, 'hl13/sound/computer/combine_button2.ogg',40)
+		icon_state = "rationdispenser-off"
+		sleep(1 SECONDS)
+		icon_state = "rationdispenser"
