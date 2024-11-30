@@ -1,4 +1,6 @@
 /obj/machinery/hl13/ration_dispenser
+	name = "Ration Dispenser"
+	desc = "A machine that gives rations to the general populous"
 	icon = 'hl13/icons/obj/combine.dmi'
 	icon_state = "rationdispenser"
 
