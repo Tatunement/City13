@@ -5203,6 +5203,7 @@
 #include "code\modules\zombie\organs.dm"
 #include "hl13\code\__DEFINES\access.dm"
 #include "hl13\code\__DEFINES\construction.dm"
+#include "hl13\code\controllers\subsystem\ration_economy.dm"
 #include "hl13\code\datums\toggles.dm"
 #include "hl13\code\datums\id_trim\jobs.dm"
 #include "hl13\code\datums\mood_events\generic_negative_events.dm"
