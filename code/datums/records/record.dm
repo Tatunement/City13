@@ -24,6 +24,8 @@
 	var/species
 	/// The character's ID trim
 	var/trim
+	/// Ration Units, held in records so civil protection can directly see it
+	var/ration_unit
 
 /datum/record/New(
 	age = 18,
@@ -37,6 +39,7 @@
 	rank = "Unassigned",
 	species = "Human",
 	trim = "Unassigned",
+	ration_unit = 0,
 )
 	src.age = age
 	src.blood_type = blood_type
@@ -49,6 +52,7 @@
 	src.rank = rank
 	src.species = species
 	src.trim = trim
+	src.ration_unit = ration_unit
 
 /**
  * Crew record datum
@@ -93,6 +97,7 @@
 	rank = "Unassigned",
 	species = "Human",
 	trim = "Unassigned",
+	ration_unit = 0,
 	/// Crew specific
 	lock_ref,
 	major_disabilities = "None",

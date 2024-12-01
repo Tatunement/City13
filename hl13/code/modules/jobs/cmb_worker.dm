@@ -26,6 +26,7 @@
 
 	job_flags = JOB_ANNOUNCE_ARRIVAL  | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS
 	rpg_title = "Stonemason"
+	starting_ration_unit = 5
 
 /datum/outfit/job/cmb_worker
 	name = JOB_CMB_WORKER

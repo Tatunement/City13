@@ -21,6 +21,7 @@
 		current_record["rank"] = target.rank
 		current_record["species"] = target.species
 		current_record["wanted"] = target.wanted_status
+		current_record["rationunit"] = target.ration_unit
 		all_records += list(current_record)
 	return all_records
 

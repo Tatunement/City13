@@ -12,7 +12,8 @@
 	var/coupon_recorded_name
 	var/id_trim
 	var/coupon_age
-
+	var/coupon_ration_unit
+	var/coupon_access
 
 	//stored coupon
 	var/obj/item/hl13/coupon/relocation_coupon/coupon
@@ -33,6 +34,8 @@
 		id_trim = coupon.trim_coupon
 		coupon_age = coupon.recorded_age
 		stored_coupon = attacking_item
+		coupon_ration_unit = coupon.starting_ration_unit
+		coupon_access = coupon.access_coupon
 		coupon_inserted = TRUE
 /obj/machinery/computer/hl13/combine_terminal/workforce_terminal/ui_interact(mob/user, datum/tgui/ui)
 	. = ..()
@@ -47,6 +50,7 @@
 	newID.assignment = coupon_role_assignment
 	newID.registered_name = coupon_recorded_name
 	newID.trim = id_trim
+	newID.access = coupon_access
 
 	newID.update_label()
 	newID.update_icon()
@@ -67,18 +71,22 @@
 				coupon_inserted = FALSE
 				stored_coupon = null
 				coupon_age = null
+				coupon_ration_unit = null
+				coupon_access = null
 		if("printid")
 			if(coupon_inserted == FALSE)
 				return
 			else
 				makeID()
-				new /datum/record/crew(name = coupon_recorded_name, age = coupon_age, rank = coupon_role_assignment)
+				new /datum/record/crew(name = coupon_recorded_name, age = coupon_age, rank = coupon_role_assignment, ration_unit = coupon_ration_unit)
 				coupon_role_assignment = null
 				coupon_recorded_name = null
 				id_trim = null
 				coupon_inserted = FALSE
 				stored_coupon = null
 				coupon_age = null
+				coupon_ration_unit = null
+				coupon_access = null
 /obj/machinery/computer/hl13/combine_terminal/workforce_terminal/ui_data(mob/user)
 	. = ..()
 	var/list/data = list()

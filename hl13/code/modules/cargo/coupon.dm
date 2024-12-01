@@ -15,6 +15,8 @@
 	var/role_assignment = "without assignment"
 	var/recorded_name = "Without recorded name"
 	var/trim_coupon = /datum/id_trim/job/citizen
+	var/list/access_coupon = list(ACCESS_RATION_STANDARD)
 	var/recorded_age = "unknown"
+	var/starting_ration_unit = 2
 
 

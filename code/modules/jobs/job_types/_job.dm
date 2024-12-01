@@ -127,6 +127,9 @@
 	/// custom ringtone for this job
 	var/job_tone
 
+	/// hl13 The amount of starting ration units that are used in the ration dispenser
+	var/starting_ration_unit = 0
+
 
 /datum/job/New()
 	. = ..()
@@ -333,8 +336,9 @@
 	if(!equipped_job)
 		equipped_job = SSjob.GetJob(equipped.job)
 
-	var/obj/item/card/id/card = equipped.wear_id
+	var/obj/item/card/id/advanced/hl13/card = equipped.wear_id
 	var/obj/item/hl13/coupon/relocation_coupon/coupon = equipped.l_store
+
 
 	if(istype(card))
 		ADD_TRAIT(card, TRAIT_JOB_FIRST_ID_CARD, ROUNDSTART_TRAIT)
