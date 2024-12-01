@@ -5203,7 +5203,11 @@
 #include "code\modules\zombie\organs.dm"
 #include "hl13\code\__DEFINES\access.dm"
 #include "hl13\code\__DEFINES\construction.dm"
+<<<<<<< HEAD
 #include "hl13\code\controllers\subsystem\ration_economy.dm"
+=======
+#include "hl13\code\__DEFINES\projectiles.dm"
+>>>>>>> dd0714fe (base AR2)
 #include "hl13\code\datums\toggles.dm"
 #include "hl13\code\datums\id_trim\jobs.dm"
 #include "hl13\code\datums\mood_events\generic_negative_events.dm"
@@ -5285,12 +5289,15 @@
 #include "hl13\code\modules\modular_computers\computers\item\pda.dm"
 #include "hl13\code\modules\modular_computers\file_system\programs\civilian_data.dm"
 #include "hl13\code\modules\modular_computers\file_system\programs\socio_stability_monitor.dm"
+#include "hl13\code\modules\projectiles\ammunition\ballistic\ar2.dm"
 #include "hl13\code\modules\projectiles\ammunition\ballistic\mp7.dm"
 #include "hl13\code\modules\projectiles\ammunition\ballistic\pistol.dm"
 #include "hl13\code\modules\projectiles\ammunition\ballistic\shotgun.dm"
+#include "hl13\code\modules\projectiles\boxes_magazines\ar2.dm"
 #include "hl13\code\modules\projectiles\boxes_magazines\mp7.dm"
 #include "hl13\code\modules\projectiles\boxes_magazines\pistol.dm"
 #include "hl13\code\modules\projectiles\boxes_magazines\shotgun.dm"
+#include "hl13\code\modules\projectiles\guns\ballistic\ar2.dm"
 #include "hl13\code\modules\projectiles\guns\ballistic\mp7.dm"
 #include "hl13\code\modules\projectiles\guns\ballistic\pistol.dm"
 #include "hl13\code\modules\projectiles\guns\ballistic\shotgun.dm"
