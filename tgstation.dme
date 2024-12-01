@@ -5203,11 +5203,8 @@
 #include "code\modules\zombie\organs.dm"
 #include "hl13\code\__DEFINES\access.dm"
 #include "hl13\code\__DEFINES\construction.dm"
-<<<<<<< HEAD
 #include "hl13\code\controllers\subsystem\ration_economy.dm"
-=======
 #include "hl13\code\__DEFINES\projectiles.dm"
->>>>>>> dd0714fe (base AR2)
 #include "hl13\code\datums\toggles.dm"
 #include "hl13\code\datums\components\crafting\ranged_weapon.dm"
 #include "hl13\code\datums\id_trim\jobs.dm"
