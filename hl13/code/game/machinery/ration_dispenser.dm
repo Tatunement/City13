@@ -32,22 +32,17 @@
 		serve_animation(FALSE)
 		return
 	for(var/f in access)
-		if(f == ACCESS_RATION_SERVICE)
-			new /obj/item/storage/hl13/ration_pack/service_ration(src.loc)
-			serve_animation()
-			return
-		if(f == ACCESS_RATION_PRIORITY || collaborator)
-			new /obj/item/storage/hl13/ration_pack/priority_ration(src.loc)
-			serve_animation()
-			return
-		if(f == ACCESS_RATION_STANDARD)
-			new /obj/item/storage/hl13/ration_pack/standard_ration(src.loc)
-			serve_animation()
-			return
-		else
-			new /obj/item/storage/hl13/ration_pack/biotic(src.loc)
-			serve_animation()
-			return
+		switch(f)
+			if(ACCESS_RATION_SERVICE)
+				new /obj/item/storage/hl13/ration_pack/service_ration(src.loc)
+			if(ACCESS_RATION_PRIORITY || collaborator)
+				new /obj/item/storage/hl13/ration_pack/priority_ration(src.loc)
+			if(ACCESS_RATION_STANDARD && !collaborator)
+				new /obj/item/storage/hl13/ration_pack/standard_ration(src.loc)
+			if(ACCESS_RATION_BIOTIC)
+				new /obj/item/storage/hl13/ration_pack/biotic(src.loc)
+		serve_animation()
+
 
 /obj/machinery/hl13/ration_dispenser/proc/serve_animation(serve = TRUE)
 	if(serve)
