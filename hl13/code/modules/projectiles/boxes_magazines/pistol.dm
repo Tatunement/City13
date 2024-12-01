@@ -13,3 +13,21 @@
 /obj/item/ammo_box/magazine/hl13/hl9mm/update_icon_state()
 	. = ..()
 	icon_state = "[base_icon_state]-[round(ammo_count(), 5)]"
+
+/obj/item/ammo_box/magazine/hl13/hl9mm/luty
+	name = "Inprovied magazine (9mm)"
+	icon_state = "luty"
+	base_icon_state = "luty"
+	ammo_type = /obj/item/ammo_casing/hl13/hl9mm
+	caliber = CALIBER_9MM
+	max_ammo = 20
+
+/obj/item/ammo_box/magazine/hl13/hl9mm/luty/update_icon_state()
+	. = ..()
+	icon_state = "[base_icon_state]"
+
+/obj/item/ammo_box/magazine/internal/hl13/zip_mag
+	name = "Zip chamber"
+	ammo_type = /obj/item/ammo_casing/hl13/hl9mm
+	caliber = CALIBER_9MM
+	max_ammo = 1
