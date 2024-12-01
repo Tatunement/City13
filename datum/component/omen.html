@@ -16,7 +16,7 @@
 <h1>omen <aside>/<a href="datum.html">datum</a>/<a href="datum/component.html">component</a>/<a href="datum/component/omen.html">omen</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L9">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L9">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 9"/></a></h1>
 
 <p>omen.dm: For when you want someone to have a really bad day</p>
@@ -37,30 +37,30 @@ Hijack the mood system to see if we get the blessing mood event to cancel the om
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L18">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L18">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 18"/></a></h3>
         <p>Base damage from negative events. Cursed take 25% less damage.</p><h3 id="var/luck_mod"><aside class="declaration">var </aside>luck_mod
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L16">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L16">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 16"/></a></h3>
         <p>Base probability of negative events. Cursed are half as unlucky.</p><h3 id="var/permanent"><aside class="declaration">var </aside>permanent
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L14">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L14">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 14"/></a></h3>
         <p>If the omen is permanent, it will never go away</p><h3 id="var/vessel"><aside class="declaration">var </aside>vessel
             <aside>&ndash; /<a href="obj.html">obj</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L12">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L12">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 12"/></a></h3>
         <p>Whatever's causing the omen, if there is one. Destroying the vessel won't stop the omen, but we destroy the vessel (if one exists) upon the omen ending</p><h2 id="proc">Proc Details</h2><h3 id="proc/check_accident"><aside class="declaration">proc </aside>check_accident<aside>(/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/our_guy) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L51">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L51">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 51"/></a></aside>
         </h3>
         <p>check_accident() is called each step we take</p>
@@ -68,32 +68,32 @@ Hijack the mood system to see if we get the blessing mood event to cancel the om
 We do the prob() at the beginning to A. add some tension for /when/ it will strike, and B. (more importantly) ameliorate the fact that we're checking up to 5 turfs's contents each time</p><h3 id="proc/check_bless"><aside class="declaration">proc </aside>check_bless<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/our_guy, category) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L119">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L119">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 119"/></a></aside>
         </h3>
         <p>Bonk!
 Hijack the mood system to see if we get the blessing mood event to cancel the omen</p><h3 id="proc/check_death"><aside class="declaration">proc </aside>check_death<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/our_guy) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L128">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L128">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 128"/></a></aside>
         </h3>
         <p>Severe deaths. Normally lifts the curse.</p><h3 id="proc/check_slip"><aside class="declaration">proc </aside>check_slip<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/our_guy, amount) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L98">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L98">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 98"/></a></aside>
         </h3>
         <p>If we get knocked down, see if we have a really bad slip and bash our head hard</p><h3 id="proc/death_explode"><aside class="declaration">proc </aside>death_explode<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/our_guy) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/3553696009954c3db6619c59c6bdcdf0d4a44c30/code/datums/components/omen.dm#L134">
+            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/omen.dm#L134">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;omen.dm 134"/></a></aside>
         </h3>
         <p>Creates a localized explosion that shakes the camera</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/3553696009954c3db6619c59c6bdcdf0d4a44c30">3553696</a>
+    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>
