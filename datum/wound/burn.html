@@ -16,7 +16,7 @@
 <h1>burn <aside>/<a href="datum.html">datum</a>/<a href="datum/wound.html">wound</a>/<a href="datum/wound/burn.html">burn</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/wounds/burns.dm#L7">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/wounds/burns.dm#L7">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;wounds&#x2F;burns.dm 7"/></a></h1>
 
 <table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
@@ -32,54 +32,54 @@
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/wounds/burns.dm#L19">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/wounds/burns.dm#L19">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;wounds&#x2F;burns.dm 19"/></a></h3>
         <p>How much damage to our flesh we currently have. Once both this and infestation reach 0, the wound is considered healed</p><h3 id="var/flesh_healing"><aside class="declaration">var </aside>flesh_healing
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/wounds/burns.dm#L21">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/wounds/burns.dm#L21">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;wounds&#x2F;burns.dm 21"/></a></h3>
         <p>Our current counter for how much flesh regeneration we have stacked from regenerative mesh/synthflesh/whatever, decrements each tick and lowers flesh_damage</p><h3 id="var/infestation"><aside class="declaration">var </aside>infestation
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/wounds/burns.dm#L27">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/wounds/burns.dm#L27">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;wounds&#x2F;burns.dm 27"/></a></h3>
         <p>Our current level of infection</p><h3 id="var/infestation_rate"><aside class="declaration">var </aside>infestation_rate
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/wounds/burns.dm#L25">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/wounds/burns.dm#L25">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;wounds&#x2F;burns.dm 25"/></a></h3>
         <p>How quickly infection breeds on this burn if we don't have disinfectant</p><h3 id="var/sanitization"><aside class="declaration">var </aside>sanitization
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/wounds/burns.dm#L29">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/wounds/burns.dm#L29">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;wounds&#x2F;burns.dm 29"/></a></h3>
         <p>Our current level of sanitization/anti-infection, from disinfectants/alcohol/UV lights. While positive, totally pauses and slowly reverses infestation effects each tick</p><h3 id="var/strikes_to_lose_limb"><aside class="declaration">var </aside>strikes_to_lose_limb
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/wounds/burns.dm#L32">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/wounds/burns.dm#L32">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;wounds&#x2F;burns.dm 32"/></a></h3>
         <p>Once we reach infestation beyond WOUND_INFESTATION_SEPSIS, we get this many warnings before the limb is completely paralyzed (you'd have to ignore a really bad burn for a really long time for this to happen)</p><h2 id="proc">Proc Details</h2><h3 id="proc/ointmentmesh"><aside class="declaration">proc </aside>ointmentmesh<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/stack.html">stack</a>/<a href="obj/item/stack/medical.html">medical</a>/I, /<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/wounds/burns.dm#L197">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/wounds/burns.dm#L197">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;wounds&#x2F;burns.dm 197"/></a></aside>
         </h3>
         <p>if someone is using ointment or mesh on our burns</p><h3 id="proc/uv"><aside class="declaration">proc </aside>uv<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/flashlight.html">flashlight</a>/<a href="obj/item/flashlight/pen/paramedic.html">pen/paramedic</a>/I, /<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/wounds/burns.dm#L216">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/wounds/burns.dm#L216">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;wounds&#x2F;burns.dm 216"/></a></aside>
         </h3>
         <p>Paramedic UV penlights</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
+    <a href="https://github.com/Tatunement/City13/tree/364c1208f03690f35d6de4e566f1525061853476">364c120</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

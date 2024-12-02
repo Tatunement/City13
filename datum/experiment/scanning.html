@@ -16,7 +16,7 @@
 <h1>Scanning Experiment <aside>/<a href="datum.html">datum</a>/<a href="datum/experiment.html">experiment</a>/<a href="datum/experiment/scanning.html">scanning</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L9">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L9">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 9"/></a></h1>
 
 <p>This is the base implementation of scanning experiments.</p>
@@ -36,25 +36,25 @@ procs should be extended where necessary.</p><table class="summary" cellspacing=
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L17">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L17">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 17"/></a></h3>
         <p>The typepaths and number of atoms that must be scanned</p><h3 id="var/scanned"><aside class="declaration">var </aside>scanned
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L19">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L19">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 19"/></a></h3>
         <p>The list of atoms with sub-lists of atom references for scanned atoms contributing to the experiment (Or a count of atoms destoryed for destructive expiriments)</p><h2 id="proc">Proc Details</h2><h3 id="proc/New"><aside class="parent"><a title="/datum/experiment" href="datum/experiment.html#proc/New">&uarr;</a></aside>New<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L26">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L26">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 26"/></a></aside>
         </h3>
         <p>Initializes the scanned atoms lists</p>
 <p>Initializes the internal scanned atoms list to keep track of which atoms have already been scanned</p><h3 id="proc/check_progress"><aside class="parent"><a title="/datum/experiment" href="datum/experiment.html#proc/check_progress">&uarr;</a></aside>check_progress<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L53">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L53">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 53"/></a></aside>
         </h3>
         <p>Gets the number of atoms that have been scanned and the goal</p>
@@ -62,7 +62,7 @@ procs should be extended where necessary.</p><table class="summary" cellspacing=
 have been scanned as well as the target number of atoms.</p><h3 id="proc/do_after_experiment"><aside class="declaration">proc </aside>do_after_experiment<aside>(/<a href="atom.html">atom</a>/target, typepath) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L139">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L139">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 139"/></a></aside>
         </h3>
         <p>Performs actions following a successful experiment action</p>
@@ -76,7 +76,7 @@ Arguments:</p>
 </ul><h3 id="proc/final_contributing_index_checks"><aside class="declaration">proc </aside>final_contributing_index_checks<aside>(/<a href="atom.html">atom</a>/target, typepath) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L126">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L126">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 126"/></a></aside>
         </h3>
         <p>Performs any additional checks against the atom being considered for selection as a contributing index</p>
@@ -89,7 +89,7 @@ Arguments:</p>
 </ul><h3 id="proc/get_contributing_index"><aside class="declaration">proc </aside>get_contributing_index<aside>(/<a href="atom.html">atom</a>/target) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L99">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L99">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 99"/></a></aside>
         </h3>
         <p>Attempts to get the typepath for an atom that would contribute to the experiment</p>
@@ -101,7 +101,7 @@ Arguments:</p>
 </ul><h3 id="proc/is_complete"><aside class="parent"><a title="/datum/experiment" href="datum/experiment.html#proc/is_complete">&uarr;</a></aside>is_complete<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L37">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L37">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 37"/></a></aside>
         </h3>
         <p>Checks if the scanning experiment is complete</p>
@@ -109,7 +109,7 @@ Arguments:</p>
 scanned.</p><h3 id="proc/perform_experiment_actions"><aside class="parent"><a title="/datum/experiment" href="datum/experiment.html#proc/perform_experiment_actions">&uarr;</a></aside>perform_experiment_actions<aside>(/<a href="datum.html">datum</a>/<a href="datum/component.html">component</a>/<a href="datum/component/experiment_handler.html">experiment_handler</a>/experiment_handler, /<a href="atom.html">atom</a>/target) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L79">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L79">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 79"/></a></aside>
         </h3>
         <p>Attempts to scan an atom towards the experiment's goal</p>
@@ -121,7 +121,7 @@ Arguments:</p>
 </ul><h3 id="proc/serialize_progress_stage"><aside class="declaration">proc </aside>serialize_progress_stage<aside>(/<a href="atom.html">atom</a>/target, /list/seen_instances) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/experisci/experiment/types/scanning.dm#L67">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/experisci/experiment/types/scanning.dm#L67">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;experisci&#x2F;experiment&#x2F;types&#x2F;scanning.dm 67"/></a></aside>
         </h3>
         <p>Serializes a progress stage into a list to be sent to the UI</p>
@@ -132,7 +132,7 @@ Arguments:</p>
 </ul></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
+    <a href="https://github.com/Tatunement/City13/tree/364c1208f03690f35d6de4e566f1525061853476">364c120</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

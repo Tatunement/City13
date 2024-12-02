@@ -16,7 +16,7 @@
 <h1>deadchat_control <aside>/<a href="datum.html">datum</a>/<a href="datum/component.html">component</a>/<a href="datum/component/deadchat_control.html">deadchat_control</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L7">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L7">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 7"/></a></h1>
 
 <p>Deadchat Plays Things - The Componenting</p>
@@ -39,78 +39,78 @@ These commands will then trigger callbacks to execute procs!</p><table class="su
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L15">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L15">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 15"/></a></h3>
         <p>Assoc list of ckey:value pairings. In DEMOCRACY_MODE, value is the player's vote. In ANARCHY_MODE, value is world.time when their cooldown expires.</p><h3 id="var/deadchat_mode"><aside class="declaration">var </aside>deadchat_mode
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L19">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L19">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 19"/></a></h3>
         <p>A bitfield containing the mode which this component uses (DEMOCRACY_MODE or ANARCHY_MODE) and other settings)</p><h3 id="var/generated_point_of_interest"><aside class="declaration">var </aside>generated_point_of_interest
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L23">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L23">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 23"/></a></h3>
         <p>Set to true if a point of interest was created for an object, and needs to be removed if deadchat control is removed. Needed for preventing objects from having two points of interest.</p><h3 id="var/input_cooldown"><aside class="declaration">var </aside>input_cooldown
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L21">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L21">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 21"/></a></h3>
         <p>In DEMOCRACY_MODE, this is how long players have to vote on an input. In ANARCHY_MODE, this is how long between inputs for each unique player.</p><h3 id="var/inputs"><aside class="declaration">var </aside>inputs
             <aside>&ndash; /list/datum/callback</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L13">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L13">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 13"/></a></h3>
         <p>Assoc list of key-chat command string, value-callback pairs. list(&quot;right&quot; = CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(_step), src, EAST))</p><h3 id="var/on_removal"><aside class="declaration">var </aside>on_removal
             <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/callback.html">callback</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L27">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L27">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 27"/></a></h3>
         <p>Callback invoked when this component is Destroy()ed to allow the parent to return to a non-deadchat controlled state.</p><h3 id="var/orbiters"><aside class="declaration">var </aside>orbiters
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L17">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L17">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 17"/></a></h3>
         <p>List of everything orbitting this component's parent.</p><h3 id="var/timerid"><aside class="declaration">var </aside>timerid
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L11">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L11">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 11"/></a></h3>
         <p>The id for the DEMOCRACY_MODE looping vote timer.</p><h2 id="proc">Proc Details</h2><h3 id="proc/async_handle_vv_topic"><aside class="declaration">proc </aside>async_handle_vv_topic<aside>(/<a href="mob.html">mob</a>/user, /list/href_list) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L174">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L174">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 174"/></a></aside>
         </h3>
         <p>Async proc handling the alert input and associated logic for an admin removing this component via the VV dropdown.</p><h3 id="proc/end_cooldown"><aside class="declaration">proc </aside>end_cooldown<aside>(ghost_ckey) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L210">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L210">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 210"/></a></aside>
         </h3>
         <p>Removes the ghost from the ckey_to_cooldown list and lets them know they are free to submit a command for the parent again.</p><h3 id="proc/handle_vv_topic"><aside class="declaration">proc </aside>handle_vv_topic<aside>(/<a href="datum.html">datum</a>/source, /<a href="mob.html">mob</a>/user, /list/href_list) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L166">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L166">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 166"/></a></aside>
         </h3>
         <p>Allows for this component to be removed via a dedicated VV dropdown entry.</p><h3 id="proc/on_examine"><aside class="declaration">proc </aside>on_examine<aside>(/<a href="atom.html">atom</a>/A, /<a href="mob.html">mob</a>/user, /list/examine_list) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L187">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L187">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 187"/></a></aside>
         </h3>
         <p>Informs any examiners to the inputs available as part of deadchat control, as well as the current operating mode and cooldowns.</p><h3 id="proc/waive_automute"><aside class="declaration">proc </aside>waive_automute<aside>(/<a href="mob.html">mob</a>/speaker, /<a href="client.html">client</a>/client, message, mute_type) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/datums/components/deadchat_control.dm#L158">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/datums/components/deadchat_control.dm#L158">
         <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;deadchat_control.dm 158"/></a></aside>
         </h3>
         <p>Prevents messages used to control the parent from counting towards the automute threshold for repeated identical messages.</p>
@@ -123,7 +123,7 @@ These commands will then trigger callbacks to execute procs!</p><table class="su
 </ul></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
+    <a href="https://github.com/Tatunement/City13/tree/364c1208f03690f35d6de4e566f1525061853476">364c120</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

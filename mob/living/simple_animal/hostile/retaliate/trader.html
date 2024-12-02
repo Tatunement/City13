@@ -16,7 +16,7 @@
 <h1>Trader <aside>/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/<a href="mob/living/simple_animal.html">simple_animal</a>/<a href="mob/living/simple_animal/hostile.html">hostile</a>/<a href="mob/living/simple_animal/hostile/retaliate.html">retaliate</a>/<a href="mob/living/simple_animal/hostile/retaliate/trader.html">trader</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L26">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L26">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 26"/></a></h1>
 
 <p>A mob that has some dialogue options with radials, allows for selling items and buying em'</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
@@ -52,13 +52,13 @@ Arguments:</td></tr>
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L126">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L126">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 126"/></a></h3>
         <p>The name of the currency that is used when buying or selling items</p><h3 id="var/products"><aside class="declaration">var </aside>products
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L62">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L62">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 62"/></a></h3>
         <p>Format; list(TYPEPATH = list(PRICE, QUANTITY))
 Associated list of items the NPC sells with how much they cost and the quantity available before a restock
@@ -66,19 +66,19 @@ This list is filled by Initialize(), if you want to change the starting products
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L83">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L83">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 83"/></a></h3>
         <p>Associated list of defines matched with list of phrases; phrase to be said is dealt by return_trader_phrase()</p><h3 id="var/sell_sound"><aside class="declaration">var </aside>sell_sound
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L55">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L55">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 55"/></a></h3>
         <p>Sound used when item sold/bought</p><h3 id="var/wanted_items"><aside class="declaration">var </aside>wanted_items
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L81">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L81">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 81"/></a></h3>
         <p>A list of wanted items that the trader would wish to buy, each typepath has a assigned value, quantity and additional flavor text</p>
 <p>CHILDREN OF TYPEPATHS INCLUDED IN WANTED_ITEMS WILL BE TREATED AS THE PARENT IF NO ENTRY EXISTS FOR THE CHILDREN</p>
@@ -95,13 +95,13 @@ EX; /obj/item/stack/sheet/mineral/diamond = list(500, INFINITY, &quot;, per 2000
 This list is filled by Initialize(), if you want to change the starting wanted items, modify initial_wanteds()</p><h2 id="proc">Proc Details</h2><h3 id="proc/Initialize"><aside class="parent"><a title="/mob" href="mob.html#proc/Initialize">&uarr;</a></aside>Initialize<aside>(mapload) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L129">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L129">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 129"/></a></aside>
         </h3>
         <p>Initializes the products and item demands of the trader</p><h3 id="proc/apply_sell_price_mods"><aside class="declaration">proc </aside>apply_sell_price_mods<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/selling, original_cost) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L390">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L390">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 390"/></a></aside>
         </h3>
         <p>Modifies the 'base' price of a item based on certain variables</p>
@@ -112,7 +112,7 @@ This list is filled by Initialize(), if you want to change the starting wanted i
 </ul><h3 id="proc/buy_item"><aside class="declaration">proc </aside>buy_item<aside>(/<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L246">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L246">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 246"/></a></aside>
         </h3>
         <p>Generates a radial of the items the NPC sells and lets the user try to buy one
@@ -122,7 +122,7 @@ Arguments:</p>
 </ul><h3 id="proc/check_menu"><aside class="declaration">proc </aside>check_menu<aside>(/<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L188">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L188">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 188"/></a></aside>
         </h3>
         <p>Checks if the user is ok to use the radial</p>
@@ -133,13 +133,13 @@ Arguments:</p>
 </ul><h3 id="proc/discuss"><aside class="declaration">proc </aside>discuss<aside>(/<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L196">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L196">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 196"/></a></aside>
         </h3>
         <p>Talk about what items are being sold/wanted by the trader and in what quantity or lore</p><h3 id="proc/exchange_sold_items"><aside class="declaration">proc </aside>exchange_sold_items<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/selling, value_exchanged_for, original_typepath) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L372">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L372">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 372"/></a></aside>
         </h3>
         <p>Handles modifying/deleting the items to ensure that a proper amount is converted into cash; put into it's own proc to make the children of this not override a 30+ line sell_item()</p>
@@ -151,7 +151,7 @@ Arguments:</p>
 </ul><h3 id="proc/generate_cash"><aside class="declaration">proc </aside>generate_cash<aside>(value, /<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L402">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L402">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 402"/></a></aside>
         </h3>
         <p>Creates an item equal to the value set by the proc and puts it in the user's hands if possible
@@ -162,37 +162,37 @@ Arguments:</p>
 </ul><h3 id="proc/initial_products"><aside class="declaration">proc </aside>initial_products<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L135">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L135">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 135"/></a></aside>
         </h3>
         <p>Returns a list of the starting price/quanity/fluff text about the product listings; products = initial(products) doesn't work so this exists mainly for restock_products()</p><h3 id="proc/initial_wanteds"><aside class="declaration">proc </aside>initial_wanteds<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L140">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L140">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 140"/></a></aside>
         </h3>
         <p>Returns a list of the starting price/quanity/fluff text about the wanted items; wanted_items = initial(wanted_items) doesn't work so this exists mainly for renew_item_demands()</p><h3 id="proc/interact">interact<aside>(/<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L158">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L158">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 158"/></a></aside>
         </h3>
         <p>Sets up the radials for the user and calls procs related to the actions the user wants to take</p><h3 id="proc/renew_item_demands"><aside class="declaration">proc </aside>renew_item_demands<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L411">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L411">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 411"/></a></aside>
         </h3>
         <p>Sets quantity of all wanted_items to initial(quanity); this proc is currently not called anywhere on the base class of traders</p><h3 id="proc/restock_products"><aside class="declaration">proc </aside>restock_products<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L407">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L407">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 407"/></a></aside>
         </h3>
         <p>Sets quantity of all products to initial(quanity); this proc is currently not called anywhere on the base class of traders</p><h3 id="proc/return_trader_phrase"><aside class="declaration">proc </aside>return_trader_phrase<aside>(say_text) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L151">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L151">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 151"/></a></aside>
         </h3>
         <p>Depending on the passed parameter/override, returns a randomly picked string out of a list</p>
@@ -203,7 +203,7 @@ Arguments:</p>
 </ul><h3 id="proc/sell_item"><aside class="declaration">proc </aside>sell_item<aside>(/<a href="mob.html">mob</a>/user, /<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/selling) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L319">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L319">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 319"/></a></aside>
         </h3>
         <p>Checks if an item is in the list of wanted items and if it is after a Yes/No radial returns generate_cash with the value of the item for the NPC
@@ -214,25 +214,25 @@ Arguments:</p>
 </ul><h3 id="proc/spend_buyer_offhand_money"><aside class="declaration">proc </aside>spend_buyer_offhand_money<aside>(/<a href="mob.html">mob</a>/user, the_cost) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L288">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L288">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 288"/></a></aside>
         </h3>
         <p>Calculates the value of money in the hand of the buyer and spends it if it's sufficient</p><h3 id="proc/trader_buys_what"><aside class="declaration">proc </aside>trader_buys_what<aside>(/<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L212">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L212">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 212"/></a></aside>
         </h3>
         <p>Displays to the user what the trader is willing to buy and how much until a restock happens</p><h3 id="proc/trader_sells_what"><aside class="declaration">proc </aside>trader_sells_what<aside>(/<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L227">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L227">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 227"/></a></aside>
         </h3>
         <p>Displays to the user what the trader is selling and how much is in stock</p><h3 id="proc/try_sell"><aside class="declaration">proc </aside>try_sell<aside>(/<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/mob/living/simple_animal/friendly/trader.dm#L304">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/mob/living/simple_animal/friendly/trader.dm#L304">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;mob&#x2F;living&#x2F;simple_animal&#x2F;friendly&#x2F;trader.dm 304"/></a></aside>
         </h3>
         <p>Tries to call sell_item on one of the user's held items, if fail gives a chat message</p>
@@ -243,7 +243,7 @@ Arguments:</p>
 </ul></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
+    <a href="https://github.com/Tatunement/City13/tree/364c1208f03690f35d6de4e566f1525061853476">364c120</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

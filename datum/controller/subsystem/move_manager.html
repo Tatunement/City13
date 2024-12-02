@@ -16,7 +16,7 @@
 <h1>move_manager <aside>/<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/<a href="datum/controller/subsystem/move_manager.html">move_manager</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/move_handler.dm#L23">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/move_handler.dm#L23">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 23"/></a></h1>
 
 <table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Procs</h2></td></tr>
@@ -38,13 +38,13 @@
             <tr><th><a href="datum/controller/subsystem/move_manager.html#proc/stop_looping">stop_looping</a></th><td>Removes the atom from some movement subsystem. Defaults to SSmovement</td></tr></table><h2 id="proc">Proc Details</h2><h3 id="proc/add_to_loop"><aside class="declaration">proc </aside>add_to_loop<aside>(/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/thing_to_add, /<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/<a href="datum/controller/subsystem/movement.html">movement</a>/subsystem, /<a href="datum.html">datum</a>/<a href="datum/move_loop.html">move_loop</a>/loop_type, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/move_handler.dm#L29">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/move_handler.dm#L29">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 29"/></a></aside>
         </h3>
         <p>Adds a movable thing to a movement subsystem. Returns TRUE if it all worked, FALSE if it failed somehow</p><h3 id="proc/force_move"><aside class="declaration">proc </aside>force_move<aside>(moving, chasing, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L297">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L297">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 297"/></a></aside>
         </h3>
         <p>Used for force-move loops, similar to move_towards_legacy() but not quite the same</p>
@@ -59,7 +59,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/force_move_dir"><aside class="declaration">proc </aside>force_move_dir<aside>(moving, direction, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L240">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L240">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 240"/></a></aside>
         </h3>
         <p>Like move(), but we don't care about collision at all</p>
@@ -74,7 +74,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/home_onto"><aside class="declaration">proc </aside>home_onto<aside>(moving, chasing, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L594">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L594">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 594"/></a></aside>
         </h3>
         <p>Helper proc for homing onto something with move_towards</p>
@@ -90,7 +90,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/jps_move"><aside class="declaration">proc </aside>jps_move<aside>(moving, chasing, delay, timeout, repath_delay, max_path_length, minimum_distance, /<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/card/id.html">card/id</a>/id, simulated_only, /<a href="turf.html">turf</a>/avoid, skip_first, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info, initial_path) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L331">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L331">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 331"/></a></aside>
         </h3>
         <p>Used for following jps defined paths. The proc signature here's a bit long, I'm sorry</p>
@@ -112,7 +112,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/move"><aside class="declaration">proc </aside>move<aside>(moving, direction, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L174">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L174">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 174"/></a></aside>
         </h3>
         <p>Replacement for walk()</p>
@@ -127,7 +127,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/move_away"><aside class="declaration">proc </aside>move_away<aside>(moving, chasing, max_dist, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L541">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L541">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 541"/></a></aside>
         </h3>
         <p>Wrapper around walk_away()</p>
@@ -143,7 +143,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/move_disposals"><aside class="declaration">proc </aside>move_disposals<aside>(moving, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L835">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L835">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 835"/></a></aside>
         </h3>
         <p>Snowflake disposal movement. Moves a disposal holder along a chain of disposal pipes</p>
@@ -157,7 +157,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/move_rand"><aside class="declaration">proc </aside>move_rand<aside>(moving, directions, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L758">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L758">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 758"/></a></aside>
         </h3>
         <p>Helper proc for the move_rand datum</p>
@@ -172,7 +172,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/move_to"><aside class="declaration">proc </aside>move_to<aside>(moving, chasing, min_dist, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L508">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L508">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 508"/></a></aside>
         </h3>
         <p>Wrapper around walk_to()</p>
@@ -188,7 +188,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/move_to_dir"><aside class="declaration">proc </aside>move_to_dir<aside>(moving, direction, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L214">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L214">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 214"/></a></aside>
         </h3>
         <p>Like move(), but it uses byond's pathfinding on a step by step basis</p>
@@ -203,7 +203,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/move_to_rand"><aside class="declaration">proc </aside>move_to_rand<aside>(moving, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L810">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L810">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 810"/></a></aside>
         </h3>
         <p>Wrapper around walk_rand(), doesn't actually result in a random walk, it's more like moving to random places in viewish</p>
@@ -217,7 +217,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/move_towards"><aside class="declaration">proc </aside>move_towards<aside>(moving, chasing, delay, home, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L575">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L575">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 575"/></a></aside>
         </h3>
         <p>Helper proc for the move_towards datum</p>
@@ -233,7 +233,7 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/move_towards_legacy"><aside class="declaration">proc </aside>move_towards_legacy<aside>(moving, chasing, delay, timeout, subsystem, priority, flags, /<a href="datum.html">datum</a>/extra_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L730">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L730">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 730"/></a></aside>
         </h3>
         <p>Wrapper for walk_towards, not reccomended, as it's movement ends up being a bit stilted</p>
@@ -248,19 +248,19 @@ priority - Defines how different move loops override each other. Lower numbers b
 flags - Set of bitflags that effect move loop behavior in some way. Check _DEFINES/movement.dm</p><h3 id="proc/processing_on"><aside class="declaration">proc </aside>processing_on<aside>(/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/packet_owner, /<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/<a href="datum/controller/subsystem/movement.html">movement</a>/subsystem) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/move_handler.dm#L38">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/move_handler.dm#L38">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;move_handler.dm 38"/></a></aside>
         </h3>
         <p>Returns the subsystem's loop if we're processing on it, null otherwise</p><h3 id="proc/stop_looping"><aside class="declaration">proc </aside>stop_looping<aside>(/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/moving, /<a href="datum.html">datum</a>/<a href="datum/controller/subsystem.html">controller/subsystem</a>/<a href="datum/controller/subsystem/movement.html">movement</a>/subsystem) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/controllers/subsystem/movement/movement_types.dm#L153">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/controllers/subsystem/movement/movement_types.dm#L153">
         <img src="git.png" width="16" height="16" title="code&#x2F;controllers&#x2F;subsystem&#x2F;movement&#x2F;movement_types.dm 153"/></a></aside>
         </h3>
         <p>Removes the atom from some movement subsystem. Defaults to SSmovement</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
+    <a href="https://github.com/Tatunement/City13/tree/364c1208f03690f35d6de4e566f1525061853476">364c120</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

@@ -16,7 +16,7 @@
 <h1>particle_holder <aside>/<a href="obj.html">obj</a>/<a href="obj/effect/abstract/particle_holder.html">effect/abstract/particle_holder</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/effects/particle_holder.dm#L3">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/effects/particle_holder.dm#L3">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;particle_holder.dm 3"/></a></h1>
 
 <p>objects can only have one particle on them at a time, so we use these abstract effects to hold and display the effects. You know, so multiple particle effects can exist at once.
@@ -35,43 +35,43 @@ this base subtype has some logic for items, as the loc of items becomes mobs ver
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/effects/particle_holder.dm#L9">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/effects/particle_holder.dm#L9">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;particle_holder.dm 9"/></a></h3>
         <p>typepath of the last location we're in, if it's different when moved then we need to update vis contents</p><h3 id="var/weak_additional"><aside class="declaration">var </aside>weak_additional
             <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/weakref.html">weakref</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/effects/particle_holder.dm#L15">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/effects/particle_holder.dm#L15">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;particle_holder.dm 15"/></a></h3>
         <p>besides the item we're also sometimes attached to other stuff! (items held emitting particles on a mob)</p><h3 id="var/weak_attached"><aside class="declaration">var </aside>weak_attached
             <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/weakref.html">weakref</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/effects/particle_holder.dm#L11">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/effects/particle_holder.dm#L11">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;particle_holder.dm 11"/></a></h3>
         <p>the main item we're attached to at the moment, particle holders hold particles for something</p><h2 id="proc">Proc Details</h2><h3 id="proc/on_move"><aside class="declaration">proc </aside>on_move<aside>(/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/attached, /<a href="atom.html">atom</a>/oldloc, direction) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/effects/particle_holder.dm#L41">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/effects/particle_holder.dm#L41">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;particle_holder.dm 41"/></a></aside>
         </h3>
         <p>signal called when parent is moved</p><h3 id="proc/on_qdel"><aside class="declaration">proc </aside>on_qdel<aside>(/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/attached, force) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/effects/particle_holder.dm#L47">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/effects/particle_holder.dm#L47">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;particle_holder.dm 47"/></a></aside>
         </h3>
         <p>signal called when parent is deleted</p><h3 id="proc/set_particle_position"><aside class="declaration">proc </aside>set_particle_position<aside>(/list/pos) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/effects/particle_holder.dm#L71">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/effects/particle_holder.dm#L71">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;particle_holder.dm 71"/></a></aside>
         </h3>
         <p>Sets the particles position to the passed coordinate list (X, Y, Z)
 See [https://www.byond.com/docs/ref/#/{notes}/particles] for position documentation</p><h3 id="proc/update_visual_contents"><aside class="declaration">proc </aside>update_visual_contents<aside>(/<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/attached_to) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/effects/particle_holder.dm#L54">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/effects/particle_holder.dm#L54">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;particle_holder.dm 54"/></a></aside>
         </h3>
         <p>logic proc for particle holders, aka where they move.
@@ -79,7 +79,7 @@ subtypes of particle holders can override this for particles that should always 
 this base subtype has some logic for items, as the loc of items becomes mobs very often hiding the particles</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
+    <a href="https://github.com/Tatunement/City13/tree/364c1208f03690f35d6de4e566f1525061853476">364c120</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

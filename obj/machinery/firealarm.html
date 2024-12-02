@@ -16,7 +16,7 @@
 <h1>firealarm <aside>/<a href="obj.html">obj</a>/<a href="obj/machinery.html">machinery</a>/<a href="obj/machinery/firealarm.html">firealarm</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/machinery/firealarm.dm#L13">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/machinery/firealarm.dm#L13">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;machinery&#x2F;firealarm.dm 13"/></a></h1>
 
 <table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
@@ -31,24 +31,24 @@
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/machinery/firealarm.dm#L35">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/machinery/firealarm.dm#L35">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;machinery&#x2F;firealarm.dm 35"/></a></h3>
         <p>Buildstate for contruction steps. 2 = complete, 1 = no wires, 0 = circuit gone</p><h3 id="var/my_area"><aside class="declaration">var </aside>my_area
             <aside>&ndash; /<a href="area.html">area</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/machinery/firealarm.dm#L37">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/machinery/firealarm.dm#L37">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;machinery&#x2F;firealarm.dm 37"/></a></h3>
         <p>Our home area, set in Init. Due to loading step order, this seems to be null very early in the server setup process, which is why some procs use <code>my_area?</code> for var or list checks.</p><h3 id="var/soundloop"><aside class="declaration">var </aside>soundloop
             <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/looping_sound.html">looping_sound</a>/firealarm</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/machinery/firealarm.dm#L41">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/machinery/firealarm.dm#L41">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;machinery&#x2F;firealarm.dm 41"/></a></h3>
         <p>looping sound datum for our fire alarm siren.</p><h2 id="proc">Proc Details</h2><h3 id="proc/alarm"><aside class="declaration">proc </aside>alarm<aside>(/<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/machinery/firealarm.dm#L242">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/machinery/firealarm.dm#L242">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;machinery&#x2F;firealarm.dm 242"/></a></aside>
         </h3>
         <p>Sounds the fire alarm and closes all firelocks in the area. Also tells the area to color the lights red.</p>
@@ -58,7 +58,7 @@
 </ul><h3 id="proc/check_security_level"><aside class="declaration">proc </aside>check_security_level<aside>(/<a href="datum.html">datum</a>/source, new_level) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/machinery/firealarm.dm#L230">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/machinery/firealarm.dm#L230">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;machinery&#x2F;firealarm.dm 230"/></a></aside>
         </h3>
         <p>Signal handler for checking if we should update fire alarm appearance accordingly to a newly set security level</p>
@@ -69,7 +69,7 @@
 </ul><h3 id="proc/reset"><aside class="declaration">proc </aside>reset<aside>(/<a href="mob.html">mob</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/machinery/firealarm.dm#L265">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/machinery/firealarm.dm#L265">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;machinery&#x2F;firealarm.dm 265"/></a></aside>
         </h3>
         <p>Resets all firelocks in the area. Also tells the area to disable alarm lighting, if it was enabled.</p>
@@ -79,7 +79,7 @@
 </ul><h3 id="proc/set_status"><aside class="declaration">proc </aside>set_status<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/machinery/firealarm.dm#L134">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/machinery/firealarm.dm#L134">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;machinery&#x2F;firealarm.dm 134"/></a></aside>
         </h3>
         <p>Sets the sound state, and then calls update_icon()</p>
@@ -88,7 +88,7 @@ so that it may update its icon and start or stop playing
 the alarm sound based on the state of an area variable.</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
+    <a href="https://github.com/Tatunement/City13/tree/364c1208f03690f35d6de4e566f1525061853476">364c120</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

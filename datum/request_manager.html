@@ -16,7 +16,7 @@
 <h1>Request Manager <aside>/<a href="datum.html">datum</a>/<a href="datum/request_manager.html">request_manager</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L22">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L22">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 22"/></a></h1>
 
 <p>Handles all player requests (prayers, centcom requests, syndicate requests)
@@ -38,18 +38,18 @@ reference nulled on the 'owner' variable of any requests</td></tr>
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L24">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L24">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 24"/></a></h3>
         <p>Associative list of ckey -&gt; list of requests</p><h3 id="var/requests_by_id"><aside class="declaration">var </aside>requests_by_id
             <aside>&ndash; /list</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L26">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L26">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 26"/></a></h3>
         <p>List where requests can be accessed by ID</p><h2 id="proc">Proc Details</h2><h3 id="proc/client_login"><aside class="declaration">proc </aside>client_login<aside>(/<a href="client.html">client</a>/C) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L39">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L39">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 39"/></a></aside>
         </h3>
         <p>Used in the new client pipeline to catch when clients are reconnecting and need to have their
@@ -60,7 +60,7 @@ reference re-assigned to the 'owner' variable of any requests</p>
 </ul><h3 id="proc/client_logout"><aside class="declaration">proc </aside>client_logout<aside>(/<a href="client.html">client</a>/C) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L52">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L52">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 52"/></a></aside>
         </h3>
         <p>Used in the destroy client pipeline to catch when clients are disconnecting and need to have their
@@ -71,7 +71,7 @@ reference nulled on the 'owner' variable of any requests</p>
 </ul><h3 id="proc/fax_request"><aside class="declaration">proc </aside>fax_request<aside>(/<a href="client.html">client</a>/requester, message, additional_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L109">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L109">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 109"/></a></aside>
         </h3>
         <p>Creates a request for fax answer</p>
@@ -82,7 +82,7 @@ reference nulled on the 'owner' variable of any requests</p>
 </ul><h3 id="proc/message_centcom"><aside class="declaration">proc </aside>message_centcom<aside>(/<a href="client.html">client</a>/C, message) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L79">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L79">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 79"/></a></aside>
         </h3>
         <p>Creates a request for a Centcom message</p>
@@ -93,7 +93,7 @@ reference nulled on the 'owner' variable of any requests</p>
 </ul><h3 id="proc/message_syndicate"><aside class="declaration">proc </aside>message_syndicate<aside>(/<a href="client.html">client</a>/C, message) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L89">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L89">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 89"/></a></aside>
         </h3>
         <p>Creates a request for a Syndicate message</p>
@@ -104,7 +104,7 @@ reference nulled on the 'owner' variable of any requests</p>
 </ul><h3 id="proc/music_request"><aside class="declaration">proc </aside>music_request<aside>(/<a href="client.html">client</a>/requester, message) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L120">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L120">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 120"/></a></aside>
         </h3>
         <p>Creates a request for a song</p>
@@ -115,7 +115,7 @@ reference nulled on the 'owner' variable of any requests</p>
 </ul><h3 id="proc/nuke_request"><aside class="declaration">proc </aside>nuke_request<aside>(/<a href="client.html">client</a>/C, message) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L99">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L99">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 99"/></a></aside>
         </h3>
         <p>Creates a request for the nuclear self destruct codes</p>
@@ -126,7 +126,7 @@ reference nulled on the 'owner' variable of any requests</p>
 </ul><h3 id="proc/pray"><aside class="declaration">proc </aside>pray<aside>(/<a href="client.html">client</a>/C, message, is_chaplain) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L66">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L66">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 66"/></a></aside>
         </h3>
         <p>Creates a request for a prayer, and notifies admins who have the sound notifications enabled when appropriate</p>
@@ -138,7 +138,7 @@ reference nulled on the 'owner' variable of any requests</p>
 </ul><h3 id="proc/request_for_client"><aside class="declaration">proc </aside>request_for_client<aside>(/<a href="client.html">client</a>/C, type, message, additional_info) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/modules/requests/request_manager.dm#L131">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/modules/requests/request_manager.dm#L131">
         <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;requests&#x2F;request_manager.dm 131"/></a></aside>
         </h3>
         <p>Creates a request and registers the request with all necessary internal tracking lists</p>
@@ -150,7 +150,7 @@ reference nulled on the 'owner' variable of any requests</p>
 </ul></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
+    <a href="https://github.com/Tatunement/City13/tree/364c1208f03690f35d6de4e566f1525061853476">364c120</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>

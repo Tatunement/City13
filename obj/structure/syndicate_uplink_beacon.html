@@ -16,7 +16,7 @@
 <h1>syndicate_uplink_beacon <aside>/<a href="obj.html">obj</a>/<a href="obj/structure/syndicate_uplink_beacon.html">structure/syndicate_uplink_beacon</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/structures/syndicate_uplink_beacon.dm#L2">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/structures/syndicate_uplink_beacon.dm#L2">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;structures&#x2F;syndicate_uplink_beacon.dm 2"/></a></h1>
 
 <p>Device that traitors can craft in order to be sent a new, undisguised uplink</p><table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
@@ -31,48 +31,48 @@
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/structures/syndicate_uplink_beacon.dm#L18">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/structures/syndicate_uplink_beacon.dm#L18">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;structures&#x2F;syndicate_uplink_beacon.dm 18"/></a></h3>
         <p>prevents traitor from activating teleport_beacon proc too much in a small period of time</p><h3 id="var/listening_radio"><aside class="declaration">var </aside>listening_radio
             <aside>&ndash; /<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/<a href="obj/item/radio.html">radio</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/structures/syndicate_uplink_beacon.dm#L16">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/structures/syndicate_uplink_beacon.dm#L16">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;structures&#x2F;syndicate_uplink_beacon.dm 16"/></a></h3>
         <p>Radio that the device needs to listen to the codeword from the traitor</p><h3 id="var/owner"><aside class="declaration">var </aside>owner
             <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/weakref.html">weakref</a></aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/structures/syndicate_uplink_beacon.dm#L12">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/structures/syndicate_uplink_beacon.dm#L12">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;structures&#x2F;syndicate_uplink_beacon.dm 12"/></a></h3>
         <p>weakref to person who is going to use the beacon to get a replacement uplink</p><h3 id="var/teleport_beacon"><aside class="declaration">var </aside>teleport_beacon
             <aside>&ndash; /<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/beacon</aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/structures/syndicate_uplink_beacon.dm#L14">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/structures/syndicate_uplink_beacon.dm#L14">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;structures&#x2F;syndicate_uplink_beacon.dm 14"/></a></h3>
         <p>while constructed the teleport beacon is still active</p><h3 id="var/uplink_code"><aside class="declaration">var </aside>uplink_code
             <aside>&ndash; </aside>
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/structures/syndicate_uplink_beacon.dm#L10">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/structures/syndicate_uplink_beacon.dm#L10">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;structures&#x2F;syndicate_uplink_beacon.dm 10"/></a></h3>
         <p>Traitor's code that they speak into the radio</p><h2 id="proc">Proc Details</h2><h3 id="proc/probe_traitor"><aside class="declaration">proc </aside>probe_traitor<aside>(/<a href="mob.html">mob</a>/<a href="mob/living.html">living</a>/user) 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/structures/syndicate_uplink_beacon.dm#L72">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/structures/syndicate_uplink_beacon.dm#L72">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;structures&#x2F;syndicate_uplink_beacon.dm 72"/></a></aside>
         </h3>
         <p>Proc reads the user, sets radio to the correct frequency and starts to listen for the replacement uplink code</p><h3 id="proc/teleport_uplink"><aside class="declaration">proc </aside>teleport_uplink<aside>() 
         
     
-            <a href="https://github.com/Tatunement/City13/blob/c6da6c9708c93b3fb9195ce78a1524e0bb158c43/code/game/objects/structures/syndicate_uplink_beacon.dm#L88">
+            <a href="https://github.com/Tatunement/City13/blob/364c1208f03690f35d6de4e566f1525061853476/code/game/objects/structures/syndicate_uplink_beacon.dm#L88">
         <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;objects&#x2F;structures&#x2F;syndicate_uplink_beacon.dm 88"/></a></aside>
         </h3>
         <p>Proc uses owners uplink handler to create replacement uplink and then lock or destroy their other uplinks</p></main>
 <footer>
     tgstation.dme
-    <a href="https://github.com/Tatunement/City13/tree/c6da6c9708c93b3fb9195ce78a1524e0bb158c43">c6da6c9</a>
+    <a href="https://github.com/Tatunement/City13/tree/364c1208f03690f35d6de4e566f1525061853476">364c120</a>
         (main) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.7.3</a></footer>
 </body>
 </html>
