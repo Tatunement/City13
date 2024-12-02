@@ -6,7 +6,7 @@
  *
  * Arguuments:
  * * damage - amount of damage
- * * damagetype - one of [BRUTE], [BURN], [TOX], [OXY], [CLONE], [STAMINA]
+ * * damagetype - one of [BRUTE], [BURN], [TOX], [OXY], [CLONE], [STAMINA], [NUTRITION]
  * * def_zone - zone that is being hit if any
  * * blocked - armor value applied
  * * forced - bypass hit percentage
@@ -33,6 +33,8 @@
 			adjustCloneLoss(damage_amount, forced = forced)
 		if(STAMINA)
 			adjustStaminaLoss(damage_amount, forced = forced)
+		if(NUTRITION)
+			adjustNutiLoss(damage_amount, forced = forced)
 	return TRUE
 
 ///like [apply_damage][/mob/living/proc/apply_damage] except it always uses the damage procs
@@ -50,6 +52,8 @@
 			return adjustCloneLoss(damage)
 		if(STAMINA)
 			return adjustStaminaLoss(damage)
+		if(NUTRITION)
+			return adjustNutiLoss(damage)
 
 /// return the damage amount for the type given
 /mob/living/proc/get_damage_amount(damagetype = BRUTE)
@@ -66,9 +70,11 @@
 			return getCloneLoss()
 		if(STAMINA)
 			return getStaminaLoss()
+		if(NUTRITION)
+			return getNutiLoss()
 
 /// applies multiple damages at once via [/mob/living/proc/apply_damage]
-/mob/living/proc/apply_damages(brute = 0, burn = 0, tox = 0, oxy = 0, clone = 0, def_zone = null, blocked = FALSE, stamina = 0, brain = 0)
+/mob/living/proc/apply_damages(brute = 0, burn = 0, tox = 0, oxy = 0, clone = 0, nutrition = 0, def_zone = null, blocked = FALSE, stamina = 0, brain = 0)
 	if(blocked >= 100)
 		return 0
 	if(brute)
@@ -85,6 +91,8 @@
 		apply_damage(stamina, STAMINA, def_zone, blocked)
 	if(brain)
 		apply_damage(brain, BRAIN, def_zone, blocked)
+	if(nutrition)
+		apply_damage(nutrition, NUTRITION, def_zone, blocked)
 	return 1
 
 
@@ -306,6 +314,25 @@
 	staminaloss = amount
 	if(updating_stamina)
 		update_stamina()
+
+/mob/living/proc/getNutiLoss()
+	return nutritionloss
+
+/mob/living/proc/adjustNutiLoss(amount, updating_health = TRUE, forced = FALSE, required_bodytype)
+	if(!forced && (status_flags & GODMODE))
+		return FALSE
+	nutritionloss = clamp((nutritionloss + (amount * CONFIG_GET(number/damage_multiplier))), 0, maxHealth * 2)
+	if(updating_health)
+		updatehealth()
+	return amount
+
+/mob/living/proc/setNutiLoss(amount, updating_health = TRUE, forced = FALSE, required_bodytype)
+	if(!forced && (status_flags & GODMODE))
+		return
+	. = nutritionloss
+	nutritionloss = amount
+	if(updating_health)
+		updatehealth()
 
 /**
  * heal ONE external organ, organ gets randomly selected from damaged ones.

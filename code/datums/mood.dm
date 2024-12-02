@@ -124,14 +124,17 @@
 				add_mood_event(MOOD_CATEGORY_NUTRITION, /datum/mood_event/wellfed) // round and full
 		if(NUTRITION_LEVEL_WELL_FED to NUTRITION_LEVEL_FULL)
 			add_mood_event(MOOD_CATEGORY_NUTRITION, /datum/mood_event/wellfed)
+			mob_parent.apply_damage(-1,NUTRITION)
 		if( NUTRITION_LEVEL_FED to NUTRITION_LEVEL_WELL_FED)
 			add_mood_event(MOOD_CATEGORY_NUTRITION, /datum/mood_event/fed)
+			mob_parent.apply_damage(-0.05,NUTRITION)
 		if(NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FED)
 			clear_mood_event(MOOD_CATEGORY_NUTRITION)
 		if(NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_HUNGRY)
 			add_mood_event(MOOD_CATEGORY_NUTRITION, /datum/mood_event/hungry)
 		if(0 to NUTRITION_LEVEL_STARVING)
 			add_mood_event(MOOD_CATEGORY_NUTRITION, /datum/mood_event/starving)
+			mob_parent.apply_damage(0.05,NUTRITION)
 
 /**
  * Adds a mood event to the mob

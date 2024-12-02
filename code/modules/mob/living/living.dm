@@ -688,7 +688,7 @@
 /mob/living/proc/updatehealth()
 	if(status_flags & GODMODE)
 		return
-	set_health(maxHealth - getOxyLoss() - getToxLoss() - getFireLoss() - getBruteLoss() - getCloneLoss())
+	set_health(maxHealth - getOxyLoss() - getToxLoss() - getFireLoss() - getBruteLoss() - getCloneLoss() - getNutiLoss())
 	update_stat()
 	med_hud_set_health()
 	med_hud_set_status()
@@ -841,6 +841,8 @@
 		setFireLoss(0, FALSE, TRUE)
 	if(heal_flags & HEAL_STAM)
 		setStaminaLoss(0, FALSE, TRUE)
+	if(heal_flags & HEAL_NUTR)
+		setNutiLoss(0, FALSE, TRUE)
 
 	// I don't really care to keep this under a flag
 	set_nutrition(NUTRITION_LEVEL_FED + 50)
@@ -1814,6 +1816,7 @@ GLOBAL_LIST_EMPTY(fire_appearances)
 			CLONE:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=clone' id='clone'>[getCloneLoss()]</a>
 			BRAIN:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=brain' id='brain'>[get_organ_loss(ORGAN_SLOT_BRAIN)]</a>
 			STAMINA:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=stamina' id='stamina'>[getStaminaLoss()]</a>
+			NUTRITION:<font size='1'><a href='?_src_=vars;[HrefToken()];mobToDamage=[refid];adjustDamage=nutrition' id='nutrition'>[getNutiLoss()]</a>
 		</font>
 	"}
 
