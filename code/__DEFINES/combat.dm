@@ -17,6 +17,8 @@
 #define STAMINA "stamina"
 /// Brain damage. Should probably be decomissioned and replaced with proper organ damage.
 #define BRAIN "brain"
+/// Nutritnal damage. Caused by not eating
+#define NUTRITION "nutrition"
 
 //Damage flag defines //
 
