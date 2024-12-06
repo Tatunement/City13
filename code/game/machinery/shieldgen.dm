@@ -456,7 +456,7 @@
 	name = "shield wall"
 	desc = "An energy shield."
 	icon = 'icons/effects/effects.dmi'
-	icon_state = "shieldwall"
+	icon_state = "holofield"
 	density = TRUE
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	light_range = 3
@@ -471,6 +471,7 @@
 	if(gen_primary && gen_secondary)
 		needs_power = TRUE
 		setDir(get_dir(gen_primary, gen_secondary))
+		req_access = gen_primary.req_access
 	for(var/mob/living/L in get_turf(src))
 		visible_message(span_danger("\The [src] is suddenly occupying the same space as \the [L]!"))
 		L.investigate_log("has been gibbed by [src].", INVESTIGATE_DEATHS)
@@ -517,11 +518,16 @@
 
 /obj/machinery/shieldwall/CanAllowThrough(atom/movable/mover, border_dir)
 	. = ..()
-	if(istype(mover) && (mover.pass_flags & PASSGLASS))
-		return prob(20)
+	if(isliving(mover))
+		var/mob/living/liver = mover
+		var/obj/item/card/id/id = liver.get_idcard()
+		if(check_access(id))
+			return TRUE
+		else
+			return FALSE
 	else
-		if(isprojectile(mover))
-			return prob(10)
+		return TRUE
+
 
 #undef ACTIVE_SETUPFIELDS
 #undef ACTIVE_HASFIELDS
