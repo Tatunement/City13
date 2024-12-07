@@ -5285,6 +5285,7 @@
 #include "hl13\code\modules\jobs\cwu_director.dm"
 #include "hl13\code\modules\jobs\cwu_medic.dm"
 #include "hl13\code\modules\jobs\cwu_member.dm"
+#include "hl13\code\modules\mob\living\basic\antlion_grub.dm"
 #include "hl13\code\modules\modular_computers\computers\item\pda.dm"
 #include "hl13\code\modules\modular_computers\file_system\programs\civilian_data.dm"
 #include "hl13\code\modules\modular_computers\file_system\programs\socio_stability_monitor.dm"

@@ -1,6 +1,6 @@
 /datum/reagent/medicine/biogel
 	name = "Bio-gel"
-	description = "Slowly heals all damage types. Overdose will cause damage in all types instead."
+	description = "Heals all damage types."
 	reagent_state = LIQUID
 	color = "#417a35"
 	var/healing = 2
@@ -15,3 +15,9 @@
 	affected_mob.adjustNutiLoss(-healing * REM * delta_time, FALSE, required_bodytype = affected_bodytype)
 	..()
 	. = TRUE
+
+/datum/reagent/medicine/biogel/raw
+	name = "Raw Bio-gel"
+	description = "Slowly heals all damage types."
+	color = "#6b7a35"
+	healing = 0.6

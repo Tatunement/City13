@@ -8,7 +8,9 @@
 	amount_per_transfer_from_this = 5
 	possible_transfer_amounts = list(5,10,15,20,25)
 	list_reagents = list(/datum/reagent/medicine/biogel = 25)
+	var/list/application_sound = list('hl13/sound/items/smallmedkit1.ogg','hl13/sound/items/medshot4.ogg',)
 	var/ignore_flags = NONE
+	var/viewable_volume = TRUE
 
 /obj/item/reagent_containers/hl13/medkit/attack(mob/living/affected_mob, mob/user)
 	inject(affected_mob, user)
@@ -36,10 +38,7 @@
 			trans = reagents.trans_to(affected_mob, amount_per_transfer_from_this, transfered_by = user, methods = INJECT)
 			to_chat(user, span_notice("[trans] unit\s injected. [reagents.total_volume] unit\s remaining in [src]."))
 			log_combat(user, affected_mob, "injected", src, "([contained])")
-			if(rand(1,2) == 1)
-				playsound(affected_mob,'hl13/sound/items/smallmedkit1.ogg',40)
-			else
-				playsound(affected_mob,'hl13/sound/items/medshot4.ogg',40)
+			playsound(affected_mob,application_sound[rand(1,length(application_sound))],40)
 		update_icon_state()
 		return TRUE
 	return FALSE
@@ -50,17 +49,32 @@
 	return clamp(round((reagents.total_volume / volume * volume), 5), 1, volume)
 
 /obj/item/reagent_containers/hl13/medkit/update_icon_state()
-	var/rounded_vol = get_rounded_vol()
-	icon_state = inhand_icon_state = "[base_icon_state]-[rounded_vol]"
+	if(viewable_volume)
+		var/rounded_vol = get_rounded_vol()
+		icon_state = inhand_icon_state = "[base_icon_state]-[rounded_vol]"
 	return ..()
 
 /obj/item/reagent_containers/hl13/medkit/vial
 	name = "M.S.E. First Aid Kit Vial"
 	desc = "An biotic hemolymph application vial for treating smaller wounds"
-	icon = 'hl13/icons/obj/medkits.dmi'
 	icon_state = "medvial-15"
 	base_icon_state = "medvial"
 	volume = 15
 	amount_per_transfer_from_this = 5
 	possible_transfer_amounts = list(5,10,15)
 	list_reagents = list(/datum/reagent/medicine/biogel = 15)
+
+/obj/item/reagent_containers/hl13/medkit/grub_guts
+	name = "Grub sack"
+	desc = "Ew it's sticky"
+	icon_state = "bugorgan"
+	base_icon_state = "bugorgan"
+	viewable_volume = FALSE
+	volume = 5
+	possible_transfer_amounts = list(5)
+	list_reagents = list(/datum/reagent/medicine/biogel/raw = 5)
+	application_sound = list('hl13/sound/items/bugbait_squeeze1.ogg','hl13/sound/items/bugbait_squeeze2.ogg','hl13/sound/items/bugbait_squeeze3.ogg')
+
+/obj/item/reagent_containers/hl13/medkit/grub_guts/inject(mob/living/affected_mob, mob/user)
+	. = ..()
+	del src
