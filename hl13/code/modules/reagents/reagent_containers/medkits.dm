@@ -2,12 +2,16 @@
 	name = "M.S.E. First Aid Kit"
 	desc = "An biotic hemolymph application kit for treating wounds"
 	icon = 'hl13/icons/obj/medkits.dmi'
+	lefthand_file = 'hl13/icons/mob/inhands/equipment/medicine_lefthand.dmi'
+	righthand_file = 'hl13/icons/mob/inhands/equipment/medicine_righthand.dmi'
+	inhand_icon_state = "medkit"
 	icon_state = "medkit-25"
 	base_icon_state = "medkit"
 	volume = 25
 	amount_per_transfer_from_this = 5
-	possible_transfer_amounts = list(5,10,15,20,25)
+	possible_transfer_amounts = list(1,5,10,15,20,25)
 	list_reagents = list(/datum/reagent/medicine/biogel = 25)
+	w_class = WEIGHT_CLASS_NORMAL
 	var/list/application_sound = list('hl13/sound/items/smallmedkit1.ogg','hl13/sound/items/medshot4.ogg',)
 	var/ignore_flags = NONE
 	var/viewable_volume = TRUE
@@ -51,7 +55,7 @@
 /obj/item/reagent_containers/hl13/medkit/update_icon_state()
 	if(viewable_volume)
 		var/rounded_vol = get_rounded_vol()
-		icon_state = inhand_icon_state = "[base_icon_state]-[rounded_vol]"
+		icon_state = "[base_icon_state]-[rounded_vol]"
 	return ..()
 
 /obj/item/reagent_containers/hl13/medkit/vial
@@ -61,7 +65,9 @@
 	base_icon_state = "medvial"
 	volume = 15
 	amount_per_transfer_from_this = 5
-	possible_transfer_amounts = list(5,10,15)
+	possible_transfer_amounts = list(1,5,10,15)
+	inhand_icon_state = "medvial"
+	w_class = WEIGHT_CLASS_SMALL
 	list_reagents = list(/datum/reagent/medicine/biogel = 15)
 
 /obj/item/reagent_containers/hl13/medkit/grub_guts
@@ -72,6 +78,7 @@
 	viewable_volume = FALSE
 	volume = 5
 	possible_transfer_amounts = list(5)
+	w_class = WEIGHT_CLASS_SMALL
 	list_reagents = list(/datum/reagent/medicine/biogel/raw = 5)
 	application_sound = list('hl13/sound/items/bugbait_squeeze1.ogg','hl13/sound/items/bugbait_squeeze2.ogg','hl13/sound/items/bugbait_squeeze3.ogg')
 
