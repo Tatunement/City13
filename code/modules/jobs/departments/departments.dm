@@ -152,7 +152,7 @@
 /datum/job_department/civilprotection
 	department_name = DEPARTMENT_CIVIL_PROTECTION
 	department_bitflags = DEPARTMENT_BITFLAG_CIVIL_PROTECTION
-	department_head = /datum/job/civil_protection_commander
+	department_head = /datum/job/civil_rank_leader
 	department_experience_type = EXP_TYPE_SECURITY
 	display_order = 12
 	label_class = "civilprotection"

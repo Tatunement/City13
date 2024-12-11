@@ -4,7 +4,7 @@
 	faction = FACTION_STATION
 	total_positions = 10
 	spawn_positions = 5
-	supervisors = JOB_CIVIL_PROTECTION_COMMANDER
+	supervisors = JOB_CIVIL_RANK_LEADER
 	exp_granted_type = EXP_TYPE_CREW
 	outfit = /datum/outfit/job/civil_protection
 	paycheck = PAYCHECK_CREW

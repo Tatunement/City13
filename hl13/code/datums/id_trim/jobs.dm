@@ -30,8 +30,8 @@
 		)
 	job = /datum/job/civil_protection
 
-/datum/id_trim/job/civil_protection_commander
-	assignment = "Civil Protection Commander"
+/datum/id_trim/job/civil_rank_leader
+	assignment = "Civil Rank Leader"
 	trim_state = "assigned"
 	department_color = COLOR_ADMINISTRATION_RED
 	sechud_icon_state = SECHUD_HL13_CIVIL_PROTECTION_COMMANDER
@@ -43,7 +43,7 @@
 	template_access = list(
 		ACCESS_RATION_SERVICE,
 		)
-	job = /datum/job/civil_protection_commander
+	job = /datum/job/civil_rank_leader
 
 /datum/id_trim/job/cwu_member
 	assignment = "CWU Member"
