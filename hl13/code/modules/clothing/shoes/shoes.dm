@@ -17,8 +17,15 @@
 
 /obj/item/clothing/shoes/hl13/cp_boots/Initialize(mapload)
 	. = ..()
-
 	create_storage(storage_type = /datum/storage/pockets/shoes)
+	AddComponent(/datum/component/squeak, list(
+		'hl13/sound/footsteps/gear1.ogg' = 1,
+		'hl13/sound/footsteps/gear2.ogg' = 1,
+		'hl13/sound/footsteps/gear3.ogg' = 1,
+		'hl13/sound/footsteps/gear4.ogg' = 1,
+		'hl13/sound/footsteps/gear5.ogg' = 1,
+		'hl13/sound/footsteps/gear6.ogg' = 1,
+		), _sound_vary = FALSE)
 
 /obj/item/clothing/shoes/hl13/brown_shoes
 	name = "brown shoes"
