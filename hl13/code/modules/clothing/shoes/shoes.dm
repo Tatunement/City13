@@ -14,6 +14,7 @@
 	strip_delay = 40
 	resistance_flags = NONE
 	lace_time = 12 SECONDS
+	footstep_sounds = FALSE
 
 /obj/item/clothing/shoes/hl13/cp_boots/Initialize(mapload)
 	. = ..()
