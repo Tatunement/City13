@@ -7,6 +7,13 @@
 	icon_state = "trash_can"
 	density = 1
 	anchored = TRUE
+	var/list/random_loot = list(
+		/obj/item/crowbar/hl13,
+		/obj/item/trash/hl13/nutrient_bar_waste/pork,
+		/obj/item/trash/hl13/nutrient_bar_waste/beef,
+		/obj/item/storage/hl13/hand_box,
+		/obj/item/reagent_containers/cup/soda_cans/hl13/breen_blue/empty,
+	)
 
 /obj/item/storage/trash_can/Initialize(mapload)
 	. = ..()
@@ -24,3 +31,8 @@
 			return ..()
 	else
 		return ..()
+
+/obj/item/storage/trash_can/PopulateContents()
+	for(var/i in 1 to rand(1,4))
+		var/loot = random_loot[rand(1,random_loot.len)]
+		new loot(src)

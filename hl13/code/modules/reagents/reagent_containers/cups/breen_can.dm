@@ -17,6 +17,16 @@
 	icon_state = "breen_can"
 	list_reagents = list(/datum/reagent/consumable/hl13/breenblue = 29)
 
+/obj/item/reagent_containers/cup/soda_cans/hl13/breen_blue/empty
+	name = "dr>breen's private reserve"
+	icon_state = "breen_can_open"
+	spillable = TRUE
+	list_reagents = list(/datum/reagent/consumable/hl13/breenblue = 0)
+
+/obj/item/reagent_containers/cup/soda_cans/hl13/breen_blue/empty/Initialize(mapload, vol)
+	. = ..()
+	reagents.flags |= OPENCONTAINER
+
 /obj/item/reagent_containers/cup/soda_cans/hl13/breen_red
 	name = "dr>breen's private reserve"
 	icon_open = "breen_can_red_open"
