@@ -33,11 +33,31 @@
 	icon_state = "breen_can_red"
 	list_reagents = list(/datum/reagent/consumable/hl13/breenred = 50)
 
+/obj/item/reagent_containers/cup/soda_cans/hl13/breen_red/empty
+	name = "dr>breen's private reserve"
+	icon_state = "breen_can_red_open"
+	spillable = TRUE
+	list_reagents = list(/datum/reagent/consumable/hl13/breenred = 0)
+
+/obj/item/reagent_containers/cup/soda_cans/hl13/breen_red/empty/Initialize(mapload, vol)
+	. = ..()
+	reagents.flags |= OPENCONTAINER
+
 /obj/item/reagent_containers/cup/soda_cans/hl13/breen_yellow
 	name = "dr>breen's private reserve"
 	icon_open = "breen_can_yellow_open"
 	icon_state = "breen_can_yellow"
 	list_reagents = list(/datum/reagent/consumable/hl13/breenyellow = 50)
+
+/obj/item/reagent_containers/cup/soda_cans/hl13/breen_yellow/empty
+	name = "dr>breen's private reserve"
+	icon_state = "breen_can_yellow_open"
+	spillable = TRUE
+	list_reagents = list(/datum/reagent/consumable/hl13/breenyellow = 0)
+
+/obj/item/reagent_containers/cup/soda_cans/hl13/breen_yellow/empty/Initialize(mapload, vol)
+	. = ..()
+	reagents.flags |= OPENCONTAINER
 
 /obj/item/reagent_containers/cup/soda_cans/hl13/coffee
 	name = "Combine Coffee"
