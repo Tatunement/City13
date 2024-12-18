@@ -11,13 +11,17 @@
 	icon_state = "cp_belt"
 	inhand_icon_state = "cp_belt"
 	worn_icon_state = "cp_belt"
-	content_overlays = TRUE
 
 /obj/item/storage/belt/hl13/cp_belt/Initialize(mapload)
 	. = ..()
 	atom_storage.max_slots = 5
 	atom_storage.max_specific_storage = WEIGHT_CLASS_NORMAL
-	atom_storage.set_holdable(list()) //todo:Set a whitelist of items that can be holded and add relative sprites
+	atom_storage.set_holdable(list(
+		/obj/item/modular_computer/combine_pda,
+		/obj/item/melee/baton/security/hl13,
+		/obj/item/gun/ballistic/automatic/hl13/usp,
+		/obj/item/ammo_box/magazine/hl13/hl9mm,
+		)) //todo:Set a whitelist of items that can be holded and add relative sprites
 
 
 /obj/item/storage/belt/hl13/cp_belt/full/PopulateContents()
@@ -37,7 +41,7 @@
 	worn_icon_state = "cp_belt"
 	content_overlays = FALSE
 
-/obj/item/storage/belt/hl13/cp_belt/Initialize(mapload)
+/obj/item/storage/belt/hl13/tools/Initialize(mapload)
 	. = ..()
 	atom_storage.max_slots = 5
 	atom_storage.max_specific_storage = WEIGHT_CLASS_NORMAL
