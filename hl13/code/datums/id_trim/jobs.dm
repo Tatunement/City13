@@ -21,12 +21,15 @@
 	sechud_icon_state = SECHUD_HL13_CIVIL_PROTECTION
 	minimal_access = list(
 		ACCESS_RATION_PRIORITY,
+		ACCESS_CIVIL_PROTECTION,
 		)
 	extra_access = list(
 		ACCESS_RATION_PRIORITY,
+		ACCESS_CIVIL_PROTECTION,
 		)
 	template_access = list(
 		ACCESS_RATION_PRIORITY,
+		ACCESS_CIVIL_PROTECTION,
 		)
 	job = /datum/job/civil_protection
 
@@ -36,12 +39,16 @@
 	department_color = COLOR_ADMINISTRATION_RED
 	sechud_icon_state = SECHUD_HL13_CIVIL_PROTECTION_COMMANDER
 	minimal_access = list(
-		ACCESS_RATION_SERVICE,)
+		ACCESS_RATION_SERVICE,
+		ACCESS_CIVIL_PROTECTION,
+		)
 	extra_access = list(
 		ACCESS_RATION_SERVICE,
+		ACCESS_CIVIL_PROTECTION,
 		)
 	template_access = list(
 		ACCESS_RATION_SERVICE,
+		ACCESS_CIVIL_PROTECTION,
 		)
 	job = /datum/job/civil_rank_leader
 

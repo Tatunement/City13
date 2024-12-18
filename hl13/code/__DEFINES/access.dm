@@ -1,3 +1,6 @@
+//Common access
+#define ACCESS_CIVIL_PROTECTION "civil_protection"
+
 //Ration access
 #define ACCESS_RATION_BIOTIC "biotic"
 #define ACCESS_RATION_STANDARD "standard"

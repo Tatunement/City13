@@ -4,6 +4,7 @@
 	icon_state = "CP_RADIO"
 	device_theme = PDA_THEME_COMBINE_PDA
 	hardware_flag = PROGRAM_TABLET
+	slot_flags = ITEM_SLOT_ID | ITEM_SLOT_BELT
 	starting_programs = list(
 		/datum/computer_file/program/civilian_data,
 		/datum/computer_file/program/socio_stability_monitor,
