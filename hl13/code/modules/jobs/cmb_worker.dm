@@ -34,11 +34,9 @@
 	id_trim = /datum/id_trim/job/cmb_worker
 	jobtype = /datum/job/cwu_member
 	uniform = /obj/item/clothing/under/hl13/rank/cwu
-	shoes = /obj/item/clothing/shoes/hl13/brown_shoes
+	shoes = /obj/item/clothing/shoes/hl13/work_boots
 	mask = /obj/item/clothing/mask/gas/hl13/combine/combine_worker
 	belt = /obj/item/storage/belt/hl13/tools/full
-
-	l_hand = /obj/item/storage/briefcase/hl13/citizen
-	gloves = /obj/item/clothing/gloves/color/yellow
-	accessory = /obj/item/clothing/accessory/hl13/cwu_armband
 	back = /obj/item/hl13/sledgehammer
+	suit = /obj/item/clothing/suit/armor/hl13/engineer_core_suit
+	gloves = /obj/item/clothing/gloves/hl13/fingerless

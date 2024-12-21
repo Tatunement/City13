@@ -33,3 +33,10 @@
 	desc = "Standard pair of shoes issued to all standard citizens. They dont look too comfortable."
 	icon_state = "brown_shoes"
 	inhand_icon_state = "brown_shoes"
+
+/obj/item/clothing/shoes/hl13/work_boots
+	name = "work boots"
+	desc = "Standard pair of work boots."
+	icon_state = "combat_boots"
+	inhand_icon_state = "combat_boots"
+	lace_time = 12 SECONDS

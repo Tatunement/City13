@@ -15,3 +15,8 @@
 	name = "civil protection commando vest"
 	icon_state = "cp_vest_cpc"
 	inhand_icon_state = "civil_protection_commander"
+
+/obj/item/clothing/suit/armor/hl13/engineer_core_suit
+	name = "Engineer Core Suit"
+	desc = "A jumpsuit designed by the combine to assist with engineering duties"
+	icon_state = "cmb_engineer_suit"
