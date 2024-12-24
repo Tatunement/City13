@@ -221,7 +221,7 @@
 #define JOB_CMB_WORKER "Combine Worker"
 #define JOB_DISPLAY_CMB_WORKER 43
 
-#define JOB_CMB_CHEIF_ENGINEER "Combine Cheif Engineer"
+#define JOB_CMB_CHEIF_ENGINEER "Combine Chief Engineer"
 #define JOB_DISPLAY_CHEIF_ENGINEER 44
 
 #define DEPARTMENT_BITFLAG_CIVIL_PROTECTION (1<<10)
