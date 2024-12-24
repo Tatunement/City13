@@ -20,3 +20,8 @@
 	name = "Engineer Core Suit"
 	desc = "A jumpsuit designed by the combine to assist with engineering duties"
 	icon_state = "cmb_engineer_suit"
+
+/obj/item/clothing/suit/armor/hl13/engineer_core_suit/cheif_engineer
+	name = "Cheif Engineer Core Suit"
+	desc = "A jumpsuit designed by the combine to assist with engineering duties"
+	icon_state = "cmb_ce_suit"

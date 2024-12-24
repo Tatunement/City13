@@ -62,3 +62,34 @@
 		)
 	generate_items_inside(items_inside,src)
 	update_appearance()
+
+/obj/item/storage/belt/hl13/tools/chief
+	name = "combine worker toolbelt"
+	icon_state = "cmb_worker_belt"
+	inhand_icon_state = "cp_belt"
+	worn_icon_state = "cp_belt"
+	content_overlays = FALSE
+
+/obj/item/storage/belt/hl13/tools/chief/Initialize(mapload)
+	. = ..()
+	atom_storage.max_slots = 5
+	atom_storage.max_specific_storage = WEIGHT_CLASS_NORMAL
+	atom_storage.set_holdable(list(
+		/obj/item/screwdriver/hl13,
+		/obj/item/weldingtool/hl13,
+		/obj/item/crowbar/hl13,
+		/obj/item/wrench/hl13,
+		/obj/item/wirecutters/hl13,
+		/obj/item/screwdriver/power/hl13,
+		/obj/item/weldingtool/hl13/power,
+		/obj/item/crowbar/power/hl13,
+		))
+
+/obj/item/storage/belt/hl13/tools/chief/full/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/screwdriver/power/hl13=1,
+		/obj/item/weldingtool/hl13/power=1,
+		/obj/item/crowbar/power/hl13=1,
+		)
+	generate_items_inside(items_inside,src)
+	update_appearance()
