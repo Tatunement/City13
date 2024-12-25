@@ -24,6 +24,8 @@
 		icon_state = "scrap_pile3"
 	if(uses_before_recharge < recharge_cap/4)
 		icon_state = "scrap_pile4"
+	if(uses_before_recharge == 0)
+		icon_state = null
 
 /obj/structure/hl13/scrapile/Initialize(mapload)//scrap piles spawn maxed out
 	uses_before_recharge = recharge_cap
@@ -31,6 +33,14 @@
 
 /obj/structure/hl13/scrapile/proc/recharge()
 	uses_before_recharge += 1
+	if(uses_before_recharge < (recharge_cap/4)*3)
+		icon_state = "scrap_pile2"
+	if(uses_before_recharge < (recharge_cap/4)*3)
+		icon_state = "scrap_pile2"
+	if(uses_before_recharge < (recharge_cap/4)*2)
+		icon_state = "scrap_pile3"
+	if(uses_before_recharge < recharge_cap/4)
+		icon_state = "scrap_pile4"
 	if(uses_before_recharge > recharge_cap)
 		uses_before_recharge = recharge_cap
 
@@ -41,7 +51,7 @@
 		. += "There is no scrap left."
 
 /obj/structure/hl13/scrapile/proc/loot()
-	var/scrap = rand(1,120)
+	var/scrap = rand(1,50)
 	var/loot
 	switch(scrap)
 		if(1)
@@ -54,6 +64,6 @@
 			loot = /obj/item/wirecutters/hl13/scrap
 		if(5)
 			loot = /obj/item/wrench/hl13/scrap
-		if(6 to 120)
+		if(6 to 50)
 			loot = /obj/item/stack/sheet/hl13/scrap_metal
 	return loot

@@ -6,52 +6,21 @@
 	var/shake_time = 6 SECONDS
 	var/smelt_amount
 
-/obj/machinery/hl13/refiner/attackby(var/obj/item/stack/sheet/W, mob/user, params)//smelts scrap sheets
-	smelt_amount = W.amount
-	if(istype(W, /obj/item/stack/sheet/hl13/scrap_metal))
-		icon_state = "refiner_closed"
-		qdel(W)
-		playsound(loc, 'hl13/sound/ambient/fire/fire_big_loop1.ogg', 50, TRUE)
-		shake_for(shake_time)
-		addtimer(CALLBACK(src, PROC_REF(process_scrap)), shake_time)
-	..()
+/obj/machinery/hl13/refiner/attackby(var/obj/item/W, mob/user, params)
+	if(istype(W,/obj/item/weldingtool/hl13/scrap) || istype(W,/obj/item/crowbar/hl13/scrap) ||\
+	 istype(W,/obj/item/screwdriver/hl13/scrap) || istype(W,/obj/item/wirecutters/hl13/scrap) || istype(W,/obj/item/wrench/hl13/scrap))
+		smelt(3,W)
+	if(istype(W,/obj/item/stack/sheet/hl13/scrap_metal))
+		var/obj/item/stack/sheet/hl13/scrap_metal/scrap = W
+		smelt(scrap.amount,W)
 
-/obj/machinery/hl13/refiner/attackby(var/obj/item/W, mob/user, params)//smelts tools
-	if(istype(W, /obj/item/weldingtool/hl13/scrap))
-		smelt_amount = 3
-		icon_state = "refiner_closed"
-		qdel(W)
-		playsound(loc, 'hl13/sound/ambient/fire/fire_big_loop1.ogg', 50, TRUE)
-		shake_for(shake_time)
-		addtimer(CALLBACK(src, PROC_REF(process_scrap)), shake_time)
-	if(istype(W, /obj/item/crowbar/hl13/scrap))
-		smelt_amount = 3
-		icon_state = "refiner_closed"
-		qdel(W)
-		playsound(loc, 'hl13/sound/ambient/fire/fire_big_loop1.ogg', 50, TRUE)
-		shake_for(shake_time)
-		addtimer(CALLBACK(src, PROC_REF(process_scrap)), shake_time)
-	if(istype(W, /obj/item/screwdriver/hl13/scrap))
-		smelt_amount = 3
-		icon_state = "refiner_closed"
-		qdel(W)
-		playsound(loc, 'hl13/sound/ambient/fire/fire_big_loop1.ogg', 50, TRUE)
-		shake_for(shake_time)
-		addtimer(CALLBACK(src, PROC_REF(process_scrap)), shake_time)
-	if(istype(W, /obj/item/wirecutters/hl13/scrap))
-		smelt_amount = 3
-		icon_state = "refiner_closed"
-		qdel(W)
-		playsound(loc, 'hl13/sound/ambient/fire/fire_big_loop1.ogg', 50, TRUE)
-		shake_for(shake_time)
-		addtimer(CALLBACK(src, PROC_REF(process_scrap)), shake_time)
-	if(istype(W, /obj/item/wrench/hl13/scrap))
-		smelt_amount = 3
-		icon_state = "refiner_closed"
-		qdel(W)
-		playsound(loc, 'hl13/sound/ambient/fire/fire_big_loop1.ogg', 50, TRUE)
-		shake_for(shake_time)
-		addtimer(CALLBACK(src, PROC_REF(process_scrap)), shake_time)
+/obj/machinery/hl13/refiner/proc/smelt(_smelt_amount,scrap_item)
+	smelt_amount = _smelt_amount
+	icon_state = "refiner_closed"
+	qdel(scrap_item)
+	playsound(loc, 'hl13/sound/ambient/fire/fire_big_loop1.ogg', 50, TRUE)
+	shake_for(shake_time)
+	addtimer(CALLBACK(src, PROC_REF(process_scrap)), shake_time)
 
 /obj/machinery/hl13/refiner/proc/process_scrap()
 	icon_state = "refiner_open"
