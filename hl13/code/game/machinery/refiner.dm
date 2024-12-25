@@ -3,7 +3,7 @@
 	icon = 'hl13/icons/obj/combine.dmi'
 	icon_state = "refiner_open"
 	density = TRUE
-	var/shake_time = 40
+	var/shake_time = 6 SECONDS
 	var/smelt_amount
 
 /obj/machinery/hl13/refiner/attackby(var/obj/item/stack/sheet/W, mob/user, params)//smelts scrap sheets
@@ -52,7 +52,6 @@
 		playsound(loc, 'hl13/sound/ambient/fire/fire_big_loop1.ogg', 50, TRUE)
 		shake_for(shake_time)
 		addtimer(CALLBACK(src, PROC_REF(process_scrap)), shake_time)
-	..()
 
 /obj/machinery/hl13/refiner/proc/process_scrap()
 	icon_state = "refiner_open"
