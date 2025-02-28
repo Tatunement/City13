@@ -5,6 +5,7 @@
 
 	var/squeak_chance = 100
 	var/volume = 30
+	var/sound_vary = TRUE
 
 	// This is so shoes don't squeak every step
 	var/steps = 0
@@ -27,7 +28,7 @@
 	)
 
 
-/datum/component/squeak/Initialize(custom_sounds, volume_override, chance_override, step_delay_override, use_delay_override, extrarange, falloff_exponent, fallof_distance)
+/datum/component/squeak/Initialize(custom_sounds, volume_override, chance_override, step_delay_override, use_delay_override, extrarange, falloff_exponent, fallof_distance, _sound_vary)
 	if(!isatom(parent))
 		return COMPONENT_INCOMPATIBLE
 	RegisterSignals(parent, list(COMSIG_ATOM_ENTERED, COMSIG_ATOM_BLOB_ACT, COMSIG_ATOM_HULK_ATTACK, COMSIG_PARENT_ATTACKBY), PROC_REF(play_squeak))
@@ -65,6 +66,8 @@
 		sound_falloff_exponent = falloff_exponent
 	if(isnum(fallof_distance))
 		sound_falloff_distance = fallof_distance
+	if(sound_vary)
+		sound_vary = _sound_vary
 
 /datum/component/squeak/UnregisterFromParent()
 	. = ..()
@@ -75,9 +78,9 @@
 
 	if(prob(squeak_chance))
 		if(!override_squeak_sounds)
-			playsound(parent, pick_weight(default_squeak_sounds), volume, TRUE, sound_extra_range, sound_falloff_exponent, falloff_distance = sound_falloff_distance)
+			playsound(parent, pick_weight(default_squeak_sounds), volume, sound_vary, sound_extra_range, sound_falloff_exponent, falloff_distance = sound_falloff_distance)
 		else
-			playsound(parent, pick_weight(override_squeak_sounds), volume, TRUE, sound_extra_range, sound_falloff_exponent, falloff_distance = sound_falloff_distance)
+			playsound(parent, pick_weight(override_squeak_sounds), volume, sound_vary, sound_extra_range, sound_falloff_exponent, falloff_distance = sound_falloff_distance)
 
 /datum/component/squeak/proc/step_squeak()
 	SIGNAL_HANDLER

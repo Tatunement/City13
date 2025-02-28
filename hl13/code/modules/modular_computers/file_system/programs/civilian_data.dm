@@ -7,6 +7,7 @@
 	program_icon = "clipboard"
 	alert_able = TRUE
 	tgui_id = "CivilianData"
+	required_access = list(ACCESS_CIVIL_PROTECTION)
 	var/datum/record/crew/target
 
 //gets records for CivilianData.js

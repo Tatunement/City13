@@ -22,6 +22,8 @@
 	var/lace_time = 5 SECONDS
 	///An active alert
 	var/datum/weakref/our_alert_ref
+	///Does it make footstep sounds
+	var/footstep_sounds = TRUE
 
 /datum/armor/clothing_shoes
 	bio = 50

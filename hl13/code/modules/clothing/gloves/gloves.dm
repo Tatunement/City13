@@ -19,3 +19,14 @@
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
 	resistance_flags = NONE
 	armor_type = /datum/armor/gloves_combat
+
+/obj/item/clothing/gloves/hl13/fingerless
+	name = "fingerless gloves"
+	desc = "Plain green gloves without fingertips for the hard working."
+	icon_state = "fingerless_gloves"
+	strip_delay = 40
+	equip_delay_other = 20
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
+	undyeable = TRUE
+	clothing_traits = list(TRAIT_FINGERPRINT_PASSTHROUGH)

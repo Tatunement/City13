@@ -2,17 +2,20 @@
 	name = "white tile"
 	icon_state = "white_tiles"
 	floor_tile = /obj/item/stack/tile/white_tiles_tiles
+	footstep = HL13_FOOTSTEP_TILE
 
 /turf/open/floor/city_floor/black_tiles
 	name = "black tile"
 	icon_state = "black_tiles"
 	floor_tile = /obj/item/stack/tile/black_tiles_tiles
+	footstep = HL13_FOOTSTEP_TILE
 
 // Not Z-Level changing stairs
 
 /turf/open/floor/city_stairs/concrete_stairs
 	name = "concrete stairs"
 	icon_state = "concrete_stairs_t"
+	footstep = HL13_FOOTSTEP_CONCRETE
 
 /turf/open/floor/city_stairs/concrete_stairs/north
 	dir = NORTH
@@ -41,6 +44,7 @@
 /turf/open/floor/city_stairs/wooden_stairs
 	name = "wooden stairs"
 	icon_state = "wooden_stairs_t"
+	footstep = HL13_FOOTSTEP_WOOD
 
 /turf/open/floor/city_stairs/wooden_stairs/north
 	dir = NORTH
@@ -57,6 +61,7 @@
 /turf/open/floor/city_stairs/combine_stairs
 	name = "combine stairs"
 	icon_state = "combine_stairs_t"
+	footstep = HL13_FOOTSTEP_METAL
 
 /turf/open/floor/city_stairs/combine_stairs/north
 	dir = NORTH

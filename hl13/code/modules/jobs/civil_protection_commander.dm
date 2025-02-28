@@ -1,9 +1,8 @@
-/datum/job/civil_protection_commander
-	title = JOB_CIVIL_PROTECTION_COMMANDER
+/datum/job/civil_rank_leader
+	title = JOB_CIVIL_RANK_LEADER
 	description = " Manage the CP forces, and ensure your units are working cooperatively and efficiently."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
-	department_head = list(JOB_CAPTAIN)
-	head_announce = list(RADIO_CHANNEL_SECURITY)
+	department_head = list(JOB_ADMINISTRATOR)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
@@ -28,7 +27,7 @@
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
 
-	display_order = JOB_DISPLAY_ORDER_CIVIL_PROTECTION_COMMANDER
+	display_order = JOB_DISPLAY_ORDER_CIVIL_RANK_LEADER
 	bounty_types = CIV_JOB_SEC
 
 	family_heirlooms = list(/obj/item/book/manual/wiki/security_space_law)
@@ -39,15 +38,15 @@
 	starting_ration_unit = 15
 
 
-/datum/job/civil_protection_commander/get_captaincy_announcement(mob/living/captain)
+/datum/job/civil_rank_leader/get_captaincy_announcement(mob/living/captain)
 	return "Due to staffing shortages, newly promoted Acting City Administrator [captain.real_name] is at the city."
 
 
 /datum/outfit/job/cpc
-	name = "Civil Protection Commander"
-	jobtype = /datum/id_trim/job/civil_protection_commander
+	name = "Civil Rank Leader"
+	jobtype = /datum/job/civil_rank_leader
 	id = /obj/item/card/id/advanced/hl13
-	id_trim = /datum/id_trim/job/civil_protection_commander
+	id_trim = /datum/id_trim/job/civil_rank_leader
 	uniform = /obj/item/clothing/under/hl13/rank/combine/civil_protection_commander
 	suit = /obj/item/clothing/suit/armor/hl13/combine/civil_protection_vest/commando
 	head = /obj/item/clothing/head/helmet/hl13/combine/helmet/civil_protection

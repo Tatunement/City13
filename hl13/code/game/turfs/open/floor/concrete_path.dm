@@ -8,3 +8,4 @@
 	smoothing_groups = SMOOTH_GROUP_TURF_OPEN + SMOOTH_GROUP_TURF_CONCRETE_PATH
 	canSmoothWith = SMOOTH_GROUP_TURF_CONCRETE_PATH
 	floor_tile = /obj/item/stack/tile/concrete/concrete_path
+	footstep = HL13_FOOTSTEP_CONCRETE

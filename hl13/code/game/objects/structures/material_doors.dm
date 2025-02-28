@@ -36,8 +36,8 @@
 /obj/structure/mineral_door/material_door/metal_door
 	name = "metal door"
 	icon = 'hl13/icons/obj/doors/metal_door_2.dmi'
-	openSound = null
-	closeSound = null
+	openSound = 'hl13/sound/door/default_move.ogg'
+	closeSound = 'hl13/sound/door/default_stop.ogg'
 
 /obj/structure/mineral_door/material_door/metal_door/north
 	icon_state = "metaldoor"
@@ -60,8 +60,8 @@
 /obj/structure/mineral_door/material_door/wooden_door
 	name = "wooden door"
 	icon = 'hl13/icons/obj/doors/wooden_door_2.dmi'
-	openSound = null
-	closeSound = null
+	openSound = 'hl13/sound/door/latchunlocked1.ogg'
+	closeSound = 'hl13/sound/door/door_wood_close1.ogg'
 
 /obj/structure/mineral_door/material_door/wooden_door/north
 	icon_state = "woodendoor"

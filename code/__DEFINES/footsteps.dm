@@ -27,6 +27,13 @@
 #define FOOTSTEP_OBJ_MACHINE 7
 #define FOOTSTEP_OBJ_ROBOT 8
 
+//hl13 defines
+#define HL13_FOOTSTEP_CONCRETE "concrete"
+#define HL13_FOOTSTEP_WOOD "wood"
+#define HL13_FOOTSTEP_TILE "tile"
+#define HL13_FOOTSTEP_GRASS "grass"
+#define HL13_FOOTSTEP_DIRT "dirt"
+#define HL13_FOOTSTEP_METAL "metal"
 /*
 
 id = list(
@@ -91,6 +98,36 @@ GLOBAL_LIST_INIT(footstep, list(
 		'sound/effects/footstep/catwalk3.ogg',
 		'sound/effects/footstep/catwalk4.ogg',
 		'sound/effects/footstep/catwalk5.ogg'), 100, 1),
+	HL13_FOOTSTEP_CONCRETE = list(list(
+		'hl13/sound/footsteps/concrete1.ogg',
+		'hl13/sound/footsteps/concrete2.ogg',
+		'hl13/sound/footsteps/concrete3.ogg',
+		'hl13/sound/footsteps/concrete4.ogg',), 75, -1),
+	HL13_FOOTSTEP_WOOD = list(list(
+		'hl13/sound/footsteps/wood1.ogg',
+		'hl13/sound/footsteps/wood2.ogg',
+		'hl13/sound/footsteps/wood3.ogg',
+		'hl13/sound/footsteps/wood4.ogg',), 75, -1),
+	HL13_FOOTSTEP_TILE = list(list(
+		'hl13/sound/footsteps/tile1.ogg',
+		'hl13/sound/footsteps/tile2.ogg',
+		'hl13/sound/footsteps/tile3.ogg',
+		'hl13/sound/footsteps/tile4.ogg',), 75, -1),
+	HL13_FOOTSTEP_GRASS = list(list(
+		'hl13/sound/footsteps/grass1.ogg',
+		'hl13/sound/footsteps/grass2.ogg',
+		'hl13/sound/footsteps/grass3.ogg',
+		'hl13/sound/footsteps/grass4.ogg',), 75, -1),
+	HL13_FOOTSTEP_DIRT = list(list(
+		'hl13/sound/footsteps/dirt1.ogg',
+		'hl13/sound/footsteps/dirt2.ogg',
+		'hl13/sound/footsteps/dirt3.ogg',
+		'hl13/sound/footsteps/dirt4.ogg',), 75, -1),
+	HL13_FOOTSTEP_METAL = list(list(
+		'hl13/sound/footsteps/metal1.ogg',
+		'hl13/sound/footsteps/metal2.ogg',
+		'hl13/sound/footsteps/metal3.ogg',
+		'hl13/sound/footsteps/metal4.ogg',), 75, -1),
 ))
 //bare footsteps lists
 GLOBAL_LIST_INIT(barefootstep, list(

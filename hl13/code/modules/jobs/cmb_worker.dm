@@ -1,4 +1,3 @@
-
 /datum/job/cmb_worker
 	title = JOB_CMB_WORKER
 	description = "Make repairs to the city and maintain it's machines"
@@ -15,6 +14,9 @@
 	display_order = JOB_DISPLAY_CMB_WORKER
 
 	department_for_prefs = /datum/job_department/engineer_core
+	departments_list = list(
+		/datum/job_department/engineer_core,
+		)
 
 	family_heirlooms = list(/obj/item/storage/toolbox/mechanical/old/heirloom, /obj/item/card/old_hl13)
 
@@ -32,13 +34,11 @@
 	name = JOB_CMB_WORKER
 	id = /obj/item/card/id/advanced/hl13
 	id_trim = /datum/id_trim/job/cmb_worker
-	jobtype = /datum/job/cwu_member
+	jobtype = /datum/job/cmb_worker
 	uniform = /obj/item/clothing/under/hl13/rank/cwu
-	shoes = /obj/item/clothing/shoes/hl13/brown_shoes
+	shoes = /obj/item/clothing/shoes/hl13/work_boots
 	mask = /obj/item/clothing/mask/gas/hl13/combine/combine_worker
 	belt = /obj/item/storage/belt/hl13/tools/full
-
-	l_hand = /obj/item/storage/briefcase/hl13/citizen
-	gloves = /obj/item/clothing/gloves/color/yellow
-	accessory = /obj/item/clothing/accessory/hl13/cwu_armband
 	back = /obj/item/hl13/sledgehammer
+	suit = /obj/item/clothing/suit/armor/hl13/engineer_core_suit
+	gloves = /obj/item/clothing/gloves/hl13/fingerless

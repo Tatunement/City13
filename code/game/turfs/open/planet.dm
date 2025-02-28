@@ -7,9 +7,9 @@
 	base_icon_state = "dirt"
 	initial_gas_mix = OPENTURF_LOW_PRESSURE
 	planetary_atmos = TRUE
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
+	footstep = HL13_FOOTSTEP_DIRT
+	barefootstep = HL13_FOOTSTEP_DIRT
+	clawfootstep = HL13_FOOTSTEP_DIRT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 

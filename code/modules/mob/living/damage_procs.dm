@@ -321,6 +321,8 @@
 /mob/living/proc/adjustNutiLoss(amount, updating_health = TRUE, forced = FALSE, required_bodytype)
 	if(!forced && (status_flags & GODMODE))
 		return FALSE
+	if(nutritionloss >= 50)
+		return FALSE
 	nutritionloss = clamp((nutritionloss + (amount * CONFIG_GET(number/damage_multiplier))), 0, maxHealth * 2)
 	if(updating_health)
 		updatehealth()
