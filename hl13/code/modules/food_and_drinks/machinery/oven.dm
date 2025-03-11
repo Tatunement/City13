@@ -130,3 +130,8 @@
 
 		log_combat(user, target_mob, "attacked", src.name, "(COMBAT MODE: [uppertext(user.combat_mode)]) (DAMTYPE: [uppertext(damtype)])")
 		add_fingerprint(user)
+
+/obj/item/reagent_containers/cup/soup_pot/hl13
+	icon = 'hl13/icons/obj/soup_pot.dmi'
+	icon_state = "pot"
+	base_icon_state = "pot"
