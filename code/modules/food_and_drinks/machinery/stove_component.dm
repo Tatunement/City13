@@ -87,12 +87,18 @@
 	START_PROCESSING(SSmachines, src)
 	on = TRUE
 	real_parent.update_appearance(UPDATE_OVERLAYS)
+	if(istype(container,/obj/item/reagent_containers/cup/hl13/frying_pan))
+		var/obj/item/reagent_containers/cup/hl13/frying_pan/pan = container
+		pan.on_heat_source(TRUE)
 
 /datum/component/stove/proc/turn_off()
 	var/obj/machinery/real_parent = parent
 	STOP_PROCESSING(SSmachines, src)
 	on = FALSE
 	real_parent.update_appearance(UPDATE_OVERLAYS)
+	if(istype(container,/obj/item/reagent_containers/cup/hl13/frying_pan))
+		var/obj/item/reagent_containers/cup/hl13/frying_pan/pan = container
+		pan.on_heat_source(FALSE)
 
 /datum/component/stove/proc/on_attack_hand_secondary(obj/machinery/source)
 	SIGNAL_HANDLER
