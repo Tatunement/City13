@@ -65,9 +65,17 @@
 
 /obj/item/gun/ballistic/automatic/hl13/mp7/luty
 	name = "Luty-9mm"
-	desc = "AH GOD ITS SO FUCKING UGLY"
+	desc = "An expedient home made fire arm"
 	icon_state = "luty"
 	inhand_icon_state = "luty"
 	mag_type = /obj/item/ammo_box/magazine/hl13/hl9mm/luty
 	recoil = 1
 	randomspread = 30
+	misfire_probability = 20
+
+/obj/item/gun/ballistic/automatic/hl13/mp7/luty/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/automatic_fire, 0.3 SECONDS)
+
+/obj/item/gun/ballistic/automatic/hl13/mp7/luty/no_mag
+	spawnwithmagazine = FALSE
