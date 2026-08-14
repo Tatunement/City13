@@ -7,7 +7,7 @@ export const Lathe = (props, context) => {
   return (
   <Window>
     <LabeledList>
-      <LabeledList.Item label="Item">
+      <LabeledList.Item>
         <h1 textAlign="centered"> Lathe Menu </h1>
         <Section width={10} height={5}>
           <label> {selected_item_name} </label>

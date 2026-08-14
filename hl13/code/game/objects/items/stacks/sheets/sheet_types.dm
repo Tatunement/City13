@@ -12,6 +12,9 @@ GLOBAL_LIST_INIT(hl13_metal_recipes, list(
 	name = "metal"
 	icon_state = "sheet-metal"
 	desc = "Sheets made out of metal."
+	material_type = /datum/material/hl13/metal
+	mats_per_unit = list(/datum/material/hl13/metal=MINERAL_MATERIAL_AMOUNT)
+
 
 /obj/item/stack/sheet/iron/hl13/metal/get_main_recipes()
 	. = ..()
